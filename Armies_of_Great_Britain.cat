@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8649-0e8b-8d82-e44d" name="Armies of Great Britain" revision="4" battleScribeVersion="2.03" authorName="NottsKnight" authorContact="ian@nottsknight.uk" authorUrl="http://nottsknight.uk" library="true" gameSystemId="3aae-158e-d423-7629" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="8649-0e8b-8d82-e44d" name="Armies of Great Britain" revision="5" battleScribeVersion="2.03" authorName="NottsKnight" authorContact="ian@nottsknight.uk" authorUrl="http://nottsknight.uk" library="true" gameSystemId="3aae-158e-d423-7629" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="9acc-3e46-06d6-b9cf" name="National Characteristic">
       <characteristicTypes>
@@ -1749,7 +1749,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2e7-c3d5-1c3f-0e17" type="min"/>
               </constraints>
               <selectionEntryGroups>
-                <selectionEntryGroup id="509b-ac75-b06c-f137" name="Weapon" hidden="false" collective="false" import="true">
+                <selectionEntryGroup id="509b-ac75-b06c-f137" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="4023-688f-618c-e532">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0112-0fe0-7131-61fd" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="edee-000b-0aef-3961" type="min"/>
