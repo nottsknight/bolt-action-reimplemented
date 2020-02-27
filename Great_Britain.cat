@@ -230,7 +230,7 @@
         <categoryLink id="8dc0-0cf9-de16-9df4" name="Infantry squad" hidden="false" targetId="3d6c-23ff-49ca-12f6" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="4121-fe3c-41c0-b57e" name="Infantry sections" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="4121-fe3c-41c0-b57e" name="Infantry sections" hidden="false" collective="false" import="true" defaultSelectionEntryId="e525-ca1a-f5e8-bede">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a69a-fb5a-b4ce-bbe8" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3973-9a3c-4ad5-023b" type="max"/>
