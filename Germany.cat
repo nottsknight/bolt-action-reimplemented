@@ -283,7 +283,7 @@
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="28ea-8f0e-3080-2f65" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28ea-8f0e-3080-2f65" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
