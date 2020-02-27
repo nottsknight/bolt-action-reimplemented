@@ -260,6 +260,53 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
+    <selectionEntry id="471f-5fd4-d1d3-8eed" name="Burma Transports &amp; Tows" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c4c-2f11-fee3-af96" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7093-f8a5-73f8-c3f6" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="d11f-f56e-5bea-c944" name="Transport vehicle or tow" hidden="false" targetId="5cba-21ae-7dae-8fc7" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="e8a2-6e39-c775-4594" name="Transports (0-1 per infantry section)" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="increment" field="d42e-d861-7a79-bfac" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3d6c-23ff-49ca-12f6" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e032-f8f4-f470-ca21" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="99f7-3a7f-2b02-82c6" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d42e-d861-7a79-bfac" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="ea10-763e-423f-5c7b" name="Bren Carrier" hidden="false" collective="false" import="true" targetId="d916-6a96-26ea-857e" type="selectionEntry"/>
+            <entryLink id="26fd-f75d-cbc9-6f79" name="3-ton Truck" hidden="false" collective="false" import="true" targetId="7fab-86ca-5fd8-fa0d" type="selectionEntry"/>
+            <entryLink id="2acf-5e6c-dbf7-19fe" name="Jeep" hidden="false" collective="false" import="true" targetId="ffc7-7726-013c-34c4" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry id="6b6f-b0a9-d288-f84a" name="Tow (0-1)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54b1-794d-bec8-a989" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="4b1d-a451-4892-4635" name="Bren Carrier" hidden="false" collective="false" import="true" targetId="d916-6a96-26ea-857e" type="selectionEntry"/>
+            <entryLink id="935b-9667-4d64-1bf5" name="15cwt Truck" hidden="false" collective="false" import="true" targetId="2d0b-e6b6-72a9-ef9f" type="selectionEntry"/>
+            <entryLink id="3176-e172-64cd-75f2" name="30cwt Truck" hidden="false" collective="false" import="true" targetId="d421-3d7d-ae72-8cb1" type="selectionEntry"/>
+            <entryLink id="de5e-074e-7b5d-2aee" name="Quad Tractor" hidden="false" collective="false" import="true" targetId="e5bc-e5da-c52c-c680" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
   </selectionEntries>
   <entryLinks>
     <entryLink id="57b3-26aa-1831-bac4" name="15cwt Truck" hidden="true" collective="false" import="true" targetId="2d0b-e6b6-72a9-ef9f" type="selectionEntry">
