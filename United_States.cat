@@ -2278,6 +2278,77 @@
         <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="e8e9-ee3d-3a2c-e9c4" name="Rocket Launcher" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="9a60-64ac-d431-a93c" name="Field Artillery, Anti-aircraft or Anti-tank gun" hidden="false" targetId="382d-6b90-2595-2882" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="9ea8-2624-b572-11ee" name="Crew" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5cbc-5afc-9793-1272" type="max"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d79-1c16-4922-b554" type="min"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4f14-a414-857e-8be8" name="114mm Rocket launcher" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5c5-2906-e5d1-18a9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca40-7c8d-face-03cf" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="45e0-0f47-f2ad-e5af" name="Heavy mortar" hidden="false" targetId="7526-ccd4-a7e4-60a0" type="profile">
+              <modifiers>
+                <modifier type="set" field="name" value="114mm Rocket Launcher"/>
+                <modifier type="append" field="3e84-e758-03ca-4a13" value=", Multiple launcher"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="a6bd-fe6a-1fc1-505a" name="Team Weapon" hidden="false" targetId="8d66-1050-acd4-aea3" type="rule"/>
+            <infoLink id="b397-bd87-4c18-102e" name="Fixed" hidden="false" targetId="827f-6b6e-bb8b-7f02" type="rule"/>
+            <infoLink id="f701-ccc9-7e21-a5e6" name="High Explosive" hidden="false" targetId="772f-0ef7-5063-f529" type="rule"/>
+            <infoLink id="e6d6-b418-b660-b665" name="Indirect Fire" hidden="false" targetId="5df7-bf5d-230f-a55b" type="rule"/>
+            <infoLink id="3c7a-54ca-6916-a746" name="HE (3&quot;)" hidden="false" targetId="eef1-05b6-9594-0aef" type="profile">
+              <modifiers>
+                <modifier type="set" field="d8ef-c000-a6b4-6f24" value="5&quot;"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="59cd-f921-c7b0-aae7" name="Multiple Launcher" hidden="false" targetId="e81e-dd1f-883f-46e3" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="099b-7038-8a77-9255" name="Quality" hidden="false" collective="false" import="true" defaultSelectionEntryId="c216-e6bb-1ad3-179c">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc5b-b7f9-255a-bdb0" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffd8-2f95-2ff5-1a59" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="10ba-c494-edf1-a4d9" name="Inexperienced" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="52.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c216-e6bb-1ad3-179c" name="Regular" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="65.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2af2-2023-f933-f16d" name="Veteran" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="78.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="64a1-f6df-cd87-08c4" name="Gyro-stabilised" publicationId="c58a-61c4-c8c9-ff17" page="20" hidden="false">
