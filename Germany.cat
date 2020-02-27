@@ -74,6 +74,74 @@
         </categoryLink>
       </categoryLinks>
     </forceEntry>
+    <forceEntry id="28ea-8f0e-3080-2f65" name="1944 -- Normandy" hidden="false">
+      <categoryLinks>
+        <categoryLink id="ce47-9f3c-894f-4ebd" name="Headquarters" hidden="false" targetId="99f7-3a7f-2b02-82c6" primary="false"/>
+        <categoryLink id="e38e-3cc6-1124-7321" name="Infantry squad" hidden="false" targetId="3d6c-23ff-49ca-12f6" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f8b-7c39-50e3-819e" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="dc82-0fcb-ca59-5afa" name="Infantry support team" hidden="false" targetId="e032-f8f4-f470-ca21" primary="false"/>
+        <categoryLink id="b0e6-395f-6838-bb4d" name="Field Artillery, Anti-aircraft or Anti-tank gun" hidden="false" targetId="382d-6b90-2595-2882" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa4a-5f2f-77ad-3c0d" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="0234-16a2-fcb4-a6ce" name="Armoured Car" hidden="false" targetId="fc66-af4d-84ec-3c93" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e75a-5d5c-6548-a42e" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="e653-ccfc-3aa2-8c86" name="Tank, Tank Destroyer, Anti-aircraft vehicle or Self-propelled artillery" hidden="false" targetId="a405-25ce-0c16-362a" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f327-8b54-7c39-8519" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="16bc-c125-0e82-5147" name="Transport vehicle or tow" hidden="false" targetId="5cba-21ae-7dae-8fc7" primary="false"/>
+        <categoryLink id="0da6-a3e8-45b7-499c" name="OF-1" hidden="false" targetId="af73-813e-7e12-d4ba" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2358-97d2-9735-9402" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f80e-2d54-e6de-81e7" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="4a0a-84cb-66c4-e0e7" name="OF-2/3" hidden="false" targetId="46c9-3a4e-3237-5504" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ded8-ea16-f53c-5194" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="f1bc-31d9-048e-b5fd" name="Medic" hidden="false" targetId="d5f1-4499-9761-bf52" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eaab-27ef-8f0e-ac2d" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="30f1-7e66-4157-109c" name="Forward Observer" hidden="false" targetId="dc8a-eb72-6f1b-1fa0" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="252b-0fd3-99c0-7dc2" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="ac37-602f-d8ef-eb6f" name="Machine gun team" hidden="false" targetId="3d59-f50c-41d0-8831" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff6b-b7ec-191c-c453" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="f913-a647-0dd5-a029" name="Mortar team" hidden="false" targetId="dac9-6e79-6184-04ed" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b02-7065-85d0-6254" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="3147-4c08-85d1-ff04" name="Anti-tank team" hidden="false" targetId="aeee-12b9-7555-e1ef" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d00c-c6d1-b96c-5e7f" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="c204-59f9-dc17-4870" name="Sniper team" hidden="false" targetId="f447-d0f5-2d00-0718" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c0e-dee3-e444-19b6" type="max"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
   </forceEntries>
   <selectionEntries>
     <selectionEntry id="f426-bdf1-1f4b-ecd0" name="Watch on the Rhine Compulsory Infantry" hidden="true" collective="false" import="true" type="upgrade">
