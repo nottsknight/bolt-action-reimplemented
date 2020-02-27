@@ -279,6 +279,63 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
+    <selectionEntry id="2da7-e997-6ed5-c6ca" name="Normandy Transports &amp; Tows" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="28ea-8f0e-3080-2f65" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4296-0328-8c61-9294" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="4025-1660-a22e-c55a" name="Transport vehicle or tow" hidden="false" targetId="5cba-21ae-7dae-8fc7" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d3d5-fba9-97ce-90e3" name="Transports (0-1 per infantry unit)" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="increment" field="434a-7fd7-4083-0eae" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3d6c-23ff-49ca-12f6" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e032-f8f4-f470-ca21" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="99f7-3a7f-2b02-82c6" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="434a-7fd7-4083-0eae" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="8824-7afd-c56d-5c07" name="Sd.Kfz 3, 6 and 10 Half-Track" hidden="false" collective="false" import="true" targetId="5112-4523-4f05-a446" type="selectionEntry"/>
+            <entryLink id="3b2a-6095-20f5-14ef" name="Sd.Kfz 7 Half-Track" hidden="false" collective="false" import="true" targetId="26a7-ee90-7616-6586" type="selectionEntry"/>
+            <entryLink id="0a3b-d77c-2570-95e6" name="Truck" hidden="false" collective="false" import="true" targetId="8392-5bbc-edb2-26f0" type="selectionEntry"/>
+            <entryLink id="f13d-4174-72b1-e41b" name="Maultier Half-Track" hidden="false" collective="false" import="true" targetId="4653-2139-3e56-a40a" type="selectionEntry"/>
+            <entryLink id="5dbd-7c66-f3b1-f380" name="Kübelwagen" hidden="false" collective="false" import="true" targetId="fd85-b460-1dde-cc20" type="selectionEntry"/>
+            <entryLink id="467c-6907-726a-b95f" name="Sd.Kfz 251/1 Half-Track &apos;Hanomag&apos;" hidden="false" collective="false" import="true" targetId="61a8-1bd7-de5d-3558" type="selectionEntry"/>
+            <entryLink id="7dd0-1ef1-e71e-cbc4" name="Sd.Kfz 250/1 Half-Track" hidden="false" collective="false" import="true" targetId="2e02-4e3c-1203-eddc" type="selectionEntry"/>
+            <entryLink id="38ed-7f8b-6c60-53a6" name="Sd.Kfz 251/10" hidden="false" collective="false" import="true" targetId="f68f-3041-d24a-85a9" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d98-a9e2-2976-4e0a" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="7a0d-c429-32ce-1ce6" name="Tow (0-1)" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6374-5e79-220e-2016" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="853e-7b89-5d53-6132" name="Sd.Kfz 3, 6 and 10 Half-Track" hidden="false" collective="false" import="true" targetId="5112-4523-4f05-a446" type="selectionEntry"/>
+            <entryLink id="7284-d1e9-e54c-76ad" name="Sd.Kfz 7 Half-Track" hidden="false" collective="false" import="true" targetId="26a7-ee90-7616-6586" type="selectionEntry"/>
+            <entryLink id="e101-c105-54ed-541a" name="Truck" hidden="false" collective="false" import="true" targetId="8392-5bbc-edb2-26f0" type="selectionEntry"/>
+            <entryLink id="8760-8b13-20eb-3a41" name="Maultier Half-Track" hidden="false" collective="false" import="true" targetId="4653-2139-3e56-a40a" type="selectionEntry"/>
+            <entryLink id="e48f-d640-4a2b-dae9" name="Kettenkrad" hidden="false" collective="false" import="true" targetId="223b-6af2-249f-58af" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
   </selectionEntries>
   <entryLinks>
     <entryLink id="1fc3-a6c8-988e-73c6" name="105mm LG40/1" hidden="true" collective="false" import="true" targetId="849e-ede4-8317-70b5" type="selectionEntry">
