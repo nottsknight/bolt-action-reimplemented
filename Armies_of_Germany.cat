@@ -4827,7 +4827,7 @@
         <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="15fb-141f-6dc3-5321" name="Panzer IV Ausf A" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="15fb-141f-6dc3-5321" name="Panzer IV Ausf. A" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="387b-9156-ed0b-6b02" name="Panzer IV Ausf A" publicationId="7be3-8596-70c9-3955" page="50" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
           <characteristics>
@@ -4884,7 +4884,7 @@
         <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1639-697e-a305-b720" name="Panzer IV Ausf B, C, D, E, F" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="1639-697e-a305-b720" name="Panzer IV Ausf. B, C, D, E, F" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="6ca1-e10b-bb0c-dd5c" name="Panzer IV Ausf B, C, D, E, F" publicationId="7be3-8596-70c9-3955" page="50" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
           <characteristics>
@@ -4946,7 +4946,7 @@
         <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5e3c-da3a-9652-bda4" name="Panzer IV Ausf G, H, J" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="5e3c-da3a-9652-bda4" name="Panzer IV Ausf. G, H, J" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="7948-73de-3800-15c1" name="Panzer IV Ausf G, H, J" publicationId="7be3-8596-70c9-3955" page="50" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
           <characteristics>
@@ -5383,7 +5383,7 @@
         <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3137-4530-f442-5cd5" name="Panzer II Ausf A, B, C, F" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="3137-4530-f442-5cd5" name="Panzer II Ausf. A, B, C, F" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="1092-3622-3e10-d5b3" name="Panzer II Ausf A, B, C, F" publicationId="7be3-8596-70c9-3955" page="45" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
           <characteristics>
@@ -5445,7 +5445,7 @@
         <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6d88-3d12-a148-a68b" name="Panzer II Ausf L Luchs" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="6d88-3d12-a148-a68b" name="Panzer II Ausf. L Luchs" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="fd19-89fc-8203-736f" name="Panzer II Ausf L Luchs" publicationId="7be3-8596-70c9-3955" page="45" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
           <characteristics>
@@ -6108,7 +6108,7 @@
         <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b2e1-62d8-b38b-ca2b" name="Panzer III Ausf C, D" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="b2e1-62d8-b38b-ca2b" name="Panzer III Ausf. C, D" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="3149-821c-1832-dad0" name="Panzer III Ausf C, D" publicationId="7be3-8596-70c9-3955" page="47" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
           <characteristics>
@@ -6165,7 +6165,7 @@
         <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5c98-7146-4504-9499" name="Panzer III Ausf E, F" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="5c98-7146-4504-9499" name="Panzer III Ausf. E, F" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="0aee-15d3-9770-b8f1" name="Panzer III Ausf E, F" publicationId="7be3-8596-70c9-3955" page="47" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
           <characteristics>
@@ -6227,7 +6227,7 @@
         <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0bb9-15a4-b42b-12b9" name="Panzer III Ausf G" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="0bb9-15a4-b42b-12b9" name="Panzer III Ausf. G" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="aed8-ea61-a0dc-12b0" name="Panzer III Ausf G" publicationId="7be3-8596-70c9-3955" page="48" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
           <characteristics>
@@ -6289,7 +6289,7 @@
         <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7682-d355-377e-1435" name="Panzer III Ausf H, J" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="7682-d355-377e-1435" name="Panzer III Ausf. H, J" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="b86d-88e2-dcef-35f6" name="Panzer III Ausf H, J" publicationId="7be3-8596-70c9-3955" page="48" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
           <characteristics>
@@ -6356,7 +6356,7 @@
         <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a3f6-e247-8855-cd9d" name="Panzer III Ausf L, M" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="a3f6-e247-8855-cd9d" name="Panzer III Ausf. L, M" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="3296-b0a9-7e39-d63c" name="Panzer III Ausf L, M" publicationId="7be3-8596-70c9-3955" page="49" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
           <characteristics>
@@ -6425,7 +6425,7 @@
         <cost name="pts" typeId="8176-344d-039b-074a" value="10.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6061-2317-6944-e63f" name="Panzer III Ausf N" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="6061-2317-6944-e63f" name="Panzer III Ausf. N" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="fdbe-ec02-af83-7818" name="Panzer III Ausf N" publicationId="7be3-8596-70c9-3955" page="49" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
           <characteristics>
@@ -6539,7 +6539,7 @@
         <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9e72-c0f1-63df-a495" name="Panzer V Panther Ausf A, D and G" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="9e72-c0f1-63df-a495" name="Panzer V Panther Ausf. A, D and G" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="c6a3-fd07-5567-8bc8" name="Panther Ausf A, D and G" publicationId="7be3-8596-70c9-3955" page="51" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
           <characteristics>
@@ -6744,7 +6744,7 @@
         <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="199e-7fb6-ff7e-8826" name="StuG III Ausf A, B, C, D, E" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="199e-7fb6-ff7e-8826" name="StuG III Ausf. A, B, C, D, E" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="68f9-eb4b-d788-459d" name="StuG III Ausf A, B, C, D, E" publicationId="7be3-8596-70c9-3955" page="53" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
           <characteristics>
@@ -6797,7 +6797,7 @@
         <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d018-0a5e-6eb7-4e39" name="StuG III Ausf F, G, H or StuG IV" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="d018-0a5e-6eb7-4e39" name="StuG III Ausf. F, G, H or StuG IV" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="c8cb-faeb-42cd-afcc" name="StuG III Ausf F, G, H or StuG IV" publicationId="7be3-8596-70c9-3955" page="54" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
           <characteristics>
