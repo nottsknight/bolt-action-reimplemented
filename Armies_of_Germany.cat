@@ -8612,6 +8612,9 @@
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="1501-1823-c668-d5c2" name="Pintle-mounted MMG (all round)" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
@@ -8879,6 +8882,9 @@
           </constraints>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="8941-f5b6-baa9-8f6f" name="Sd.Kfz 8 with Armoured Cab" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -8932,6 +8938,77 @@
           </constraints>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d39b-1943-5d34-8c57" name="Sd.Kfz 251/23" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="ec83-00aa-25f4-6c9c" name="Sd.Kfz 251/23" publicationId="7be3-8596-70c9-3955" page="71" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
+          <characteristics>
+            <characteristic name="Mobility" typeId="4f3d-8de7-7a3c-86f2">Half-track</characteristic>
+            <characteristic name="Armour" typeId="800c-f0f8-35cd-bf26">Armoured carrier (7+)</characteristic>
+            <characteristic name="Special Rules" typeId="5d9c-8a45-401f-0d72">Open-topped, Recce</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="d7cb-dde3-6bb2-fc1f" name="Open-Topped" hidden="false" targetId="aabc-b1f8-3028-9ca3" type="rule"/>
+        <infoLink id="7588-f2b8-06b8-87cf" name="Recce" hidden="false" targetId="211d-a0f1-3ec7-87e3" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="cfa0-e5c3-19f2-ca35" name="Armoured Car" hidden="false" targetId="fc66-af4d-84ec-3c93" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="e4ef-d375-256a-472a" name="Turret-mounted light autocannon w/ co-axial MMG" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="297d-49cc-c9fd-d587" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2369-6b4f-49b8-6ba5" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="4030-3d81-1405-fb74" name="Light autocannon" hidden="false" collective="false" import="true" targetId="14a1-db5b-c7fb-c4b5" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0555-33d7-e9b3-6554" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b96-2513-c79b-d144" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="9997-a570-fda0-35e0" name="Medium machine gun (MMG)" hidden="false" collective="false" import="true" targetId="e03b-40d5-8524-f200" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f3b-c093-4b61-19c9" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3942-ea19-8c35-46d9" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d637-bed0-2be9-6162" name="Quality" hidden="false" collective="false" import="true" defaultSelectionEntryId="8e5f-8c84-3bfa-a4e0">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a4b-5727-86ae-5652" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25c7-f9d7-93ea-9a18" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="182f-76bf-3c4d-97be" name="Inexperienced" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="76.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8e5f-8c84-3bfa-a4e0" name="Regular" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="95.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="695b-b266-8189-0092" name="Veteran" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="114.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
