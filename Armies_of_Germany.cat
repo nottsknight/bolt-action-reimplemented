@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f67d-59c8-b475-69cc" name="Armies of Germany" revision="9" battleScribeVersion="2.03" library="true" gameSystemId="3aae-158e-d423-7629" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f67d-59c8-b475-69cc" name="Armies of Germany" revision="10" battleScribeVersion="2.03" library="true" gameSystemId="3aae-158e-d423-7629" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <rules>
     <rule id="3d04-7655-19f0-28c4" name="Blitzkrieg" publicationId="7be3-8596-70c9-3955" page="17" hidden="false">
       <description>Officers using &quot;You men, snap to action&quot; may draw an additional order die from the bag when they do so.</description>
@@ -8612,6 +8612,9 @@
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="1501-1823-c668-d5c2" name="Pintle-mounted MMG (all round)" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
@@ -8879,6 +8882,9 @@
           </constraints>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="8941-f5b6-baa9-8f6f" name="Sd.Kfz 8 with Armoured Cab" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -8932,6 +8938,205 @@
           </constraints>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d39b-1943-5d34-8c57" name="Sd.Kfz 251/23" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="ec83-00aa-25f4-6c9c" name="Sd.Kfz 251/23" publicationId="7be3-8596-70c9-3955" page="71" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
+          <characteristics>
+            <characteristic name="Mobility" typeId="4f3d-8de7-7a3c-86f2">Half-track</characteristic>
+            <characteristic name="Armour" typeId="800c-f0f8-35cd-bf26">Armoured carrier (7+)</characteristic>
+            <characteristic name="Special Rules" typeId="5d9c-8a45-401f-0d72">Open-topped, Recce</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="d7cb-dde3-6bb2-fc1f" name="Open-Topped" hidden="false" targetId="aabc-b1f8-3028-9ca3" type="rule"/>
+        <infoLink id="7588-f2b8-06b8-87cf" name="Recce" hidden="false" targetId="211d-a0f1-3ec7-87e3" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="cfa0-e5c3-19f2-ca35" name="Armoured Car" hidden="false" targetId="fc66-af4d-84ec-3c93" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="e4ef-d375-256a-472a" name="Turret-mounted light autocannon w/ co-axial MMG" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="297d-49cc-c9fd-d587" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2369-6b4f-49b8-6ba5" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="4030-3d81-1405-fb74" name="Light autocannon" hidden="false" collective="false" import="true" targetId="14a1-db5b-c7fb-c4b5" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0555-33d7-e9b3-6554" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b96-2513-c79b-d144" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="9997-a570-fda0-35e0" name="Medium machine gun (MMG)" hidden="false" collective="false" import="true" targetId="e03b-40d5-8524-f200" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f3b-c093-4b61-19c9" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3942-ea19-8c35-46d9" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d637-bed0-2be9-6162" name="Quality" hidden="false" collective="false" import="true" defaultSelectionEntryId="8e5f-8c84-3bfa-a4e0">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a4b-5727-86ae-5652" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25c7-f9d7-93ea-9a18" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="182f-76bf-3c4d-97be" name="Inexperienced" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="76.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8e5f-8c84-3bfa-a4e0" name="Regular" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="95.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="695b-b266-8189-0092" name="Veteran" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="114.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="239e-0145-42f0-ce98" name="Motorcycle with MG Sidecar" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="91f5-54fd-2f76-e03e" name="Motorcycle with MG Sidecar" publicationId="7be3-8596-70c9-3955" page="71" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
+          <characteristics>
+            <characteristic name="Mobility" typeId="4f3d-8de7-7a3c-86f2">Wheeled</characteristic>
+            <characteristic name="Armour" typeId="800c-f0f8-35cd-bf26">Soft-skin (6+)</characteristic>
+            <characteristic name="Special Rules" typeId="5d9c-8a45-401f-0d72">Recce, Turn on the spot</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="2c18-d84c-eff3-67cd" name="Turn on the spot" publicationId="7be3-8596-70c9-3955" page="71" hidden="false">
+          <description>May reverse at full speed, ending the move in the direction of travel.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="6e2b-adf0-c4fc-b916" name="Recce" hidden="false" targetId="211d-a0f1-3ec7-87e3" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="471c-faee-feae-277e" name="Armoured Car" hidden="false" targetId="fc66-af4d-84ec-3c93" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="8f91-b0fb-fbf4-cbea" name="Quality" hidden="false" collective="false" import="true" defaultSelectionEntryId="982a-06a7-d51a-81f9">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32d9-b07c-97c8-7876" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c8e-e591-c4df-0360" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="0bfd-443c-0da8-eaf6" name="Inexperienced" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="32.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="982a-06a7-d51a-81f9" name="Regular" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="40.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ce21-e140-0b92-f4b5" name="Veteran" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="48.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="4870-ad5a-1b48-0b02" name="Medium machine gun (MMG)" hidden="false" collective="false" import="true" targetId="e03b-40d5-8524-f200" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="name" value="Forward-facing MMG"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="816e-3d83-37f6-e4b1" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="134c-01ac-8749-c52b" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b57b-a0ff-6a1a-ff77" name="Panzerspähwagen P204(f)" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="aa12-1ce9-48fe-ca97" name="Panzerspähwagen P204(f)" publicationId="7be3-8596-70c9-3955" page="72" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
+          <characteristics>
+            <characteristic name="Mobility" typeId="4f3d-8de7-7a3c-86f2">Wheeled</characteristic>
+            <characteristic name="Armour" typeId="800c-f0f8-35cd-bf26">Armoured car (7+)</characteristic>
+            <characteristic name="Special Rules" typeId="5d9c-8a45-401f-0d72">Recce</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="b169-cdb1-d788-7d2a" name="Recce" hidden="false" targetId="211d-a0f1-3ec7-87e3" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="7dc4-9e43-bcf4-1d29" name="Armoured Car" hidden="false" targetId="fc66-af4d-84ec-3c93" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="fab2-0383-7f1b-939e" name="Turret-mounted light AT gun w/ co-axial MMG" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9286-ceab-74a4-8b01" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ed7-ff84-6a92-603a" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="9105-bbd7-ff81-eac3" name="Light AT gun" hidden="false" collective="false" import="true" targetId="a2d0-22d0-c0f5-bf97" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4da-2adb-1228-a324" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be11-df34-592e-61d8" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="647f-3b4d-8835-7333" name="Medium machine gun (MMG)" hidden="false" collective="false" import="true" targetId="e03b-40d5-8524-f200" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="902e-01d6-a51c-526e" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9740-ac9d-b48b-1996" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d49d-b692-9c6c-c5da" name="Quality" hidden="false" collective="false" import="true" defaultSelectionEntryId="150b-11b8-f001-0a85">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18a2-1607-4fe4-07e8" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6596-7ed0-0e69-c17d" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="c995-6eb8-ddda-143e" name="Inexperienced" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="92.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="150b-11b8-f001-0a85" name="Regular" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="115.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="fa11-ad4c-decb-2712" name="Veteran" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="138.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
