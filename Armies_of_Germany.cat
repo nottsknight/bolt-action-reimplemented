@@ -8214,6 +8214,151 @@
         <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="cbc1-63f7-117c-7457" name="Brummbär" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="0002-a172-919d-9671" name="Brummbär" publicationId="7be3-8596-70c9-3955" page="58" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
+          <characteristics>
+            <characteristic name="Mobility" typeId="4f3d-8de7-7a3c-86f2">Tracked</characteristic>
+            <characteristic name="Armour" typeId="800c-f0f8-35cd-bf26">Heavy tank (10+)</characteristic>
+            <characteristic name="Special Rules" typeId="5d9c-8a45-401f-0d72"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="892e-8842-160f-8ff0" name="Tank, Tank Destroyer, Anti-aircraft vehicle or Self-propelled artillery" hidden="false" targetId="a405-25ce-0c16-362a" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="833f-29fe-e872-99ce" name="Quality" hidden="false" collective="false" import="true" defaultSelectionEntryId="5810-b44a-9920-181b">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb2e-932e-a08a-669a" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e623-6202-bd1b-d1d3" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="5810-b44a-9920-181b" name="Regular" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="310.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a278-ed03-ef5a-f8d0" name="Veteran" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="372.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7ec6-649a-4aee-ce12" name="Inexperienced" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="248.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="8072-2018-15be-3e36" name="Heavy howitzer" hidden="false" collective="false" import="true" targetId="7c13-225b-8afd-e986" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="name" value="Casement-mounted forward-facing heavy howitzer"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d3a-b2be-f92e-313b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9dfe-dd30-f94c-daee" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="70ac-3332-3680-97ac" name="Medium machine gun (MMG)" hidden="false" collective="false" import="true" targetId="e03b-40d5-8524-f200" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="name" value="Hull-mounted forward-facing MMG"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ded-8f95-8b57-fa39" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bd2-cb5e-5535-2d0d" type="min"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="8176-344d-039b-074a" value="10.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="e44b-93db-fb89-e54a" name="Schürzen armour skirts" hidden="false" collective="false" import="true" targetId="3371-f755-3d5a-a834" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1a43-493d-2c3c-d15f" name="Sturmtiger" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="dae8-dd9c-9aeb-a1ff" name="Sturmtiger" publicationId="7be3-8596-70c9-3955" page="58" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
+          <characteristics>
+            <characteristic name="Mobility" typeId="4f3d-8de7-7a3c-86f2">Tracked</characteristic>
+            <characteristic name="Armour" typeId="800c-f0f8-35cd-bf26">Super-heavy tank (11+)</characteristic>
+            <characteristic name="Special Rules" typeId="5d9c-8a45-401f-0d72">Tiger fear</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="c015-366e-bba9-3f93" name="Tiger Fear" hidden="false" targetId="a76a-430e-8756-bf3a" type="rule"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="f7f4-4b5b-100c-91cd" name="Casement-mounted forward-facing rocket mortar" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad9e-6c9f-8f60-88f5" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="163f-12b2-d6a4-ad3e" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="4c83-54e4-3301-6fcd" name="Rocket mortar" publicationId="7be3-8596-70c9-3955" page="58" hidden="false" typeId="4e19-6ce9-3597-0d80" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="a466-872d-e405-3443">36&quot;</characteristic>
+                <characteristic name="Shots" typeId="93dc-7790-be40-fc65">1</characteristic>
+                <characteristic name="Pen" typeId="97a7-3112-b4cb-acc1">HE</characteristic>
+                <characteristic name="Special Rules" typeId="3e84-e758-03ca-4a13">Team, Fixed, Howitzer, HE (4&quot;), Rocket mortar</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="4aaf-2597-3414-9b7b" name="Rocket mortar" publicationId="7be3-8596-70c9-3955" page="58" hidden="false">
+              <description>Re-roll all failed damage rolls, and the roll for the number of Pin markers to place.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="4021-38ca-8913-4359" name="HE (4&quot;)" hidden="false" targetId="c64b-de3c-dec5-53d3" type="profile">
+              <modifiers>
+                <modifier type="set" field="34b6-df1e-426f-c5bf" value="4D6"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="ebb2-1aab-821c-6a67" name="Team Weapon" hidden="false" targetId="8d66-1050-acd4-aea3" type="rule"/>
+            <infoLink id="5af4-771f-331f-c121" name="Fixed" hidden="false" targetId="827f-6b6e-bb8b-7f02" type="rule"/>
+            <infoLink id="667a-4d85-16fc-0908" name="High Explosive" hidden="false" targetId="772f-0ef7-5063-f529" type="rule"/>
+            <infoLink id="bd61-80f6-9259-b2bb" name="Howitzer" hidden="false" targetId="df86-cf9e-4d35-9b4b" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="dffd-6f9a-858d-ab28" name="Quality" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ecfa-53ac-191d-53d3" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b306-5d22-8c25-720d" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="f61c-f389-6b68-9ddb" name="Inexperienced" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="384.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c47d-fad8-78f7-4732" name="Regular" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="480.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="2e6a-9808-f8c5-6f40" name="Medium machine gun (MMG)" hidden="false" collective="false" import="true" targetId="e03b-40d5-8524-f200" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="name" value="Forward-facing hull-mounted MMG"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a9f-75a9-f281-866e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0180-a611-107a-3891" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="a76a-430e-8756-bf3a" name="Tiger Fear" publicationId="7be3-8596-70c9-3955" page="17" hidden="false">
