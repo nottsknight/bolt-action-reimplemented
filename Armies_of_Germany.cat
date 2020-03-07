@@ -9010,6 +9010,67 @@
         <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="239e-0145-42f0-ce98" name="Motorcycle with MG Sidecar" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="91f5-54fd-2f76-e03e" name="Motorcycle with MG Sidecar" publicationId="7be3-8596-70c9-3955" page="71" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
+          <characteristics>
+            <characteristic name="Mobility" typeId="4f3d-8de7-7a3c-86f2">Wheeled</characteristic>
+            <characteristic name="Armour" typeId="800c-f0f8-35cd-bf26">Soft-skin (6+)</characteristic>
+            <characteristic name="Special Rules" typeId="5d9c-8a45-401f-0d72">Recce, Turn on the spot</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="2c18-d84c-eff3-67cd" name="Turn on the spot" publicationId="7be3-8596-70c9-3955" page="71" hidden="false">
+          <description>May reverse at full speed, ending the move in the direction of travel.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="6e2b-adf0-c4fc-b916" name="Recce" hidden="false" targetId="211d-a0f1-3ec7-87e3" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="471c-faee-feae-277e" name="Armoured Car" hidden="false" targetId="fc66-af4d-84ec-3c93" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="8f91-b0fb-fbf4-cbea" name="Quality" hidden="false" collective="false" import="true" defaultSelectionEntryId="982a-06a7-d51a-81f9">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32d9-b07c-97c8-7876" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c8e-e591-c4df-0360" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="0bfd-443c-0da8-eaf6" name="Inexperienced" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="32.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="982a-06a7-d51a-81f9" name="Regular" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="40.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ce21-e140-0b92-f4b5" name="Veteran" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="48.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="4870-ad5a-1b48-0b02" name="Medium machine gun (MMG)" hidden="false" collective="false" import="true" targetId="e03b-40d5-8524-f200" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="name" value="Forward-facing MMG"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="816e-3d83-37f6-e4b1" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="134c-01ac-8749-c52b" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="a76a-430e-8756-bf3a" name="Tiger Fear" publicationId="7be3-8596-70c9-3955" page="17" hidden="false">
