@@ -8057,6 +8057,9 @@
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -8220,7 +8223,7 @@
           <characteristics>
             <characteristic name="Mobility" typeId="4f3d-8de7-7a3c-86f2">Tracked</characteristic>
             <characteristic name="Armour" typeId="800c-f0f8-35cd-bf26">Heavy tank (10+)</characteristic>
-            <characteristic name="Special Rules" typeId="5d9c-8a45-401f-0d72"></characteristic>
+            <characteristic name="Special Rules" typeId="5d9c-8a45-401f-0d72"/>
           </characteristics>
         </profile>
       </profiles>
@@ -8293,6 +8296,9 @@
       <infoLinks>
         <infoLink id="c015-366e-bba9-3f93" name="Tiger Fear" hidden="false" targetId="a76a-430e-8756-bf3a" type="rule"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink id="e702-b112-28d7-426a" name="Tank, Tank Destroyer, Anti-aircraft vehicle or Self-propelled artillery" hidden="false" targetId="a405-25ce-0c16-362a" primary="true"/>
+      </categoryLinks>
       <selectionEntries>
         <selectionEntry id="f7f4-4b5b-100c-91cd" name="Casement-mounted forward-facing rocket mortar" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -8325,6 +8331,9 @@
             <infoLink id="667a-4d85-16fc-0908" name="High Explosive" hidden="false" targetId="772f-0ef7-5063-f529" type="rule"/>
             <infoLink id="bd61-80f6-9259-b2bb" name="Howitzer" hidden="false" targetId="df86-cf9e-4d35-9b4b" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -8358,6 +8367,9 @@
           </constraints>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
