@@ -8832,6 +8832,107 @@
         <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="c1a1-773c-b262-8354" name="Borgward Wanze Ausf. C" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="f883-205c-15ee-de40" name="Borgward Wanze Ausf. C" publicationId="7be3-8596-70c9-3955" page="61" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
+          <characteristics>
+            <characteristic name="Mobility" typeId="4f3d-8de7-7a3c-86f2">Tracked</characteristic>
+            <characteristic name="Armour" typeId="800c-f0f8-35cd-bf26">Armoured carrier (7+)</characteristic>
+            <characteristic name="Special Rules" typeId="5d9c-8a45-401f-0d72">Open-topped</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="0e0d-6316-0de0-4b72" name="Slow" hidden="false" targetId="f588-9b83-2356-ae6c" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="d8ac-974b-ae5e-7076" name="Tank, Tank Destroyer, Anti-aircraft vehicle or Self-propelled artillery" hidden="false" targetId="a405-25ce-0c16-362a" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="3b9a-e296-f879-25d5" name="Quality" hidden="false" collective="false" import="true" defaultSelectionEntryId="5005-ba15-87c8-a934">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef62-3634-6114-7257" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23d1-8bee-26c8-bd16" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="77b4-61fb-d66d-8f01" name="Inexperienced" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="88.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5005-ba15-87c8-a934" name="Regular" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="110.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="8959-e0d1-6bbc-3c23" name="Panzerschreck" hidden="false" collective="false" import="true" targetId="65ae-9b97-f7b9-24af" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="name" value="Rakentenpanzerbüchse 54/1 recoilless rocket launchers"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb51-f943-419c-40cf" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="68f9-fe53-5cd5-81ab" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="8941-f5b6-baa9-8f6f" name="Sd.Kfz 8 with Armoured Cab" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="7fb0-a5ed-9d5a-dfad" name="Sd.Kfz 8 with Armoured Cab" publicationId="7be3-8596-70c9-3955" page="61" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
+          <characteristics>
+            <characteristic name="Mobility" typeId="4f3d-8de7-7a3c-86f2">Half-track</characteristic>
+            <characteristic name="Armour" typeId="800c-f0f8-35cd-bf26">Armoured carrier (7+)</characteristic>
+            <characteristic name="Special Rules" typeId="5d9c-8a45-401f-0d72">Open-topped</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="94c7-ed8f-fe8b-3c44" name="Slow" hidden="false" targetId="f588-9b83-2356-ae6c" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="d28c-567b-b9ba-a4e6" name="Tank, Tank Destroyer, Anti-aircraft vehicle or Self-propelled artillery" hidden="false" targetId="a405-25ce-0c16-362a" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="590c-ac98-9a19-21e7" name="Quality" hidden="false" collective="false" import="true" defaultSelectionEntryId="9d9b-12b3-64d1-618d">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e227-0170-519a-18b3" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3bbd-e318-07f9-5388" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="c855-507e-a94e-7236" name="Inexperienced" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="128.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9d9b-12b3-64d1-618d" name="Regular" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="160.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="aa8c-abe1-ed22-5d4b" name="Veteran" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="192.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="8d3b-d490-829f-cae2" name="Heavy AT gun" hidden="false" collective="false" import="true" targetId="8d2d-0888-e8e4-e239" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="name" value="Platform-mounted heavy AT gun (all round)"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dfbf-ebef-cd8c-d15f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6a2-9016-19c1-a18e" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="a76a-430e-8756-bf3a" name="Tiger Fear" publicationId="7be3-8596-70c9-3955" page="17" hidden="false">
