@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f67d-59c8-b475-69cc" name="Armies of Germany" revision="9" battleScribeVersion="2.03" library="true" gameSystemId="3aae-158e-d423-7629" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f67d-59c8-b475-69cc" name="Armies of Germany" revision="10" battleScribeVersion="2.03" library="true" gameSystemId="3aae-158e-d423-7629" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <rules>
     <rule id="3d04-7655-19f0-28c4" name="Blitzkrieg" publicationId="7be3-8596-70c9-3955" page="17" hidden="false">
       <description>Officers using &quot;You men, snap to action&quot; may draw an additional order die from the bag when they do so.</description>
