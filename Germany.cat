@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8520-0429-c552-df80" name="Germany" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="3aae-158e-d423-7629" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="8520-0429-c552-df80" name="Germany" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="3aae-158e-d423-7629" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="3ce1-6a1c-1296-159c" name="1944-45 -- Operation Watch on the Rhine" hidden="false">
       <categoryLinks>
@@ -278,6 +278,9 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="2da7-e997-6ed5-c6ca" name="Normandy Transports &amp; Tows" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
@@ -335,6 +338,9 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+      </costs>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
@@ -1786,6 +1792,216 @@
       </modifiers>
     </entryLink>
     <entryLink id="7b90-bd86-18bd-d85b" name="Jagdtiger" hidden="true" collective="false" import="true" targetId="2416-8c7e-dcbf-4c25" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c435-2918-b171-daad" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb25-b02f-7c68-6cce" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="fb77-0933-3eaa-474f" name="Hetzer" hidden="true" collective="false" import="true" targetId="d7eb-c4ca-2c6a-3de8" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c435-2918-b171-daad" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb25-b02f-7c68-6cce" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3ce1-6a1c-1296-159c" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="9a3e-1dc2-a264-3618" name="Nashorn" hidden="true" collective="false" import="true" targetId="75d2-f287-dbe7-5d5e" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c435-2918-b171-daad" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb25-b02f-7c68-6cce" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="05eb-1211-6992-6aac" name="Ferdinand/Elefant" hidden="true" collective="false" import="true" targetId="26a5-9381-2aad-38a2" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c435-2918-b171-daad" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb25-b02f-7c68-6cce" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="3d86-f793-ea93-ca4c" name="Brummbär" hidden="true" collective="false" import="true" targetId="cbc1-63f7-117c-7457" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c435-2918-b171-daad" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb25-b02f-7c68-6cce" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28ea-8f0e-3080-2f65" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3ce1-6a1c-1296-159c" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="b3e8-f4ad-0c21-bae5" name="Sturmtiger" hidden="true" collective="false" import="true" targetId="1a43-493d-2c3c-d15f" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c435-2918-b171-daad" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb25-b02f-7c68-6cce" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3ce1-6a1c-1296-159c" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="ee79-c5b8-ad51-a93d" name="Panzerjäger I" hidden="true" collective="false" import="true" targetId="dee5-ffdb-451d-2b8a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c435-2918-b171-daad" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb25-b02f-7c68-6cce" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="fce7-6c80-c879-ba94" name="Marder I" hidden="true" collective="false" import="true" targetId="4d76-bc6e-9244-1232" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c435-2918-b171-daad" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb25-b02f-7c68-6cce" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28ea-8f0e-3080-2f65" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3ce1-6a1c-1296-159c" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="46f5-2efd-47d9-3640" name="Marder II" hidden="true" collective="false" import="true" targetId="8061-5d71-975b-5f11" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c435-2918-b171-daad" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb25-b02f-7c68-6cce" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28ea-8f0e-3080-2f65" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3ce1-6a1c-1296-159c" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="b1e3-16c4-7658-0e2a" name="Marder III Ausf. H, M" hidden="true" collective="false" import="true" targetId="a732-27ef-7604-85e9" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c435-2918-b171-daad" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb25-b02f-7c68-6cce" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28ea-8f0e-3080-2f65" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3ce1-6a1c-1296-159c" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="5ff0-d8c7-482f-e408" name="RSO/Pak 40" hidden="true" collective="false" import="true" targetId="ce5b-f5e2-ae1c-2604" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c435-2918-b171-daad" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb25-b02f-7c68-6cce" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28ea-8f0e-3080-2f65" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3ce1-6a1c-1296-159c" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="1fd2-6653-385e-42c5" name="U304(f) Armoured Half-track with Pak 36" hidden="true" collective="false" import="true" targetId="1e32-a4a5-7a8c-3b0f" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c435-2918-b171-daad" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb25-b02f-7c68-6cce" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28ea-8f0e-3080-2f65" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="bef4-3b3d-67b4-3cfc" name="Sd.Kfz 251/22 Pakwagen" hidden="true" collective="false" import="true" targetId="1a87-8c82-f164-203a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c435-2918-b171-daad" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb25-b02f-7c68-6cce" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3ce1-6a1c-1296-159c" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="d950-483d-7c34-bf71" name="Borgward Wanze Ausf. C" hidden="true" collective="false" import="true" targetId="c1a1-773c-b262-8354" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c435-2918-b171-daad" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb25-b02f-7c68-6cce" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="d8c8-5c18-90ec-1e78" name="Sd.Kfz 8 with Armoured Cab" hidden="true" collective="false" import="true" targetId="8941-f5b6-baa9-8f6f" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
