@@ -8337,7 +8337,7 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="dffd-6f9a-858d-ab28" name="Quality" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="dffd-6f9a-858d-ab28" name="Quality" hidden="false" collective="false" import="true" defaultSelectionEntryId="c47d-fad8-78f7-4732">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ecfa-53ac-191d-53d3" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b306-5d22-8c25-720d" type="min"/>
