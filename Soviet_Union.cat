@@ -8972,6 +8972,10 @@
                   <modifiers>
                     <modifier type="set" field="name" value="Turret-mounted LMG"/>
                   </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ee3-f87d-b706-b510" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d6c-f9ad-fc19-bac5" type="min"/>
+                  </constraints>
                 </entryLink>
               </entryLinks>
             </selectionEntry>
@@ -8990,6 +8994,10 @@
                   <modifiers>
                     <modifier type="set" field="name" value="Turret-mounted LMG"/>
                   </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1e9-3814-7de2-fc5d" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7b3-b402-4c86-785e" type="max"/>
+                  </constraints>
                 </entryLink>
               </entryLinks>
               <costs>
@@ -9011,6 +9019,10 @@
                   <modifiers>
                     <modifier type="set" field="name" value="Turret-mounted HMG"/>
                   </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f51-ac18-7819-c8a8" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0cde-8924-3d89-ff2a" type="min"/>
+                  </constraints>
                 </entryLink>
               </entryLinks>
               <costs>
