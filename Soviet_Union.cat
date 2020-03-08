@@ -1218,6 +1218,20 @@
         </modifier>
       </modifiers>
     </entryLink>
+    <entryLink id="c275-7092-6b87-f266" name="BA-10" hidden="true" collective="false" import="true" targetId="ecfa-d0a1-273c-a865" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c435-2918-b171-daad" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb25-b02f-7c68-6cce" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <rules>
     <rule id="619c-631a-f9af-b3ca" name="The Great Patriotic War" publicationId="b31e-eb64-81f7-e19f" page="21" hidden="false">
@@ -9044,6 +9058,84 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ecfa-d0a1-273c-a865" name="BA-10" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="bb63-4412-e097-89a4" name="BA-10" publicationId="b31e-eb64-81f7-e19f" page="54" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
+          <characteristics>
+            <characteristic name="Mobility" typeId="4f3d-8de7-7a3c-86f2">Wheeled</characteristic>
+            <characteristic name="Armour" typeId="800c-f0f8-35cd-bf26">Armoured car (7+)</characteristic>
+            <characteristic name="Special Rules" typeId="5d9c-8a45-401f-0d72">Recce</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="65fd-0dd6-820e-448e" name="Recce" hidden="false" targetId="211d-a0f1-3ec7-87e3" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="5d1f-c3e4-e322-4a0f" name="Armoured Car" hidden="false" targetId="fc66-af4d-84ec-3c93" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="9540-947c-ff23-6898" name="Turret-mounted light AT gun w/ co-axial LMG" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2881-0e48-10c8-75f5" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="343d-9350-9dfb-1a5e" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="4c69-7d0c-0cd9-2b39" name="Light AT gun" hidden="false" collective="false" import="true" targetId="a2d0-22d0-c0f5-bf97" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f048-0ef6-c602-6b38" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f3f-ede2-b53d-d228" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="2ec5-65a5-ac57-854b" name="Light machine gun (LMG)" hidden="false" collective="false" import="true" targetId="815d-4a75-26a9-0cf4" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4194-5e87-ce2f-27b0" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3383-fc50-b456-02b0" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="c53b-d4f9-2b84-b408" name="Quality" hidden="false" collective="false" import="true" defaultSelectionEntryId="9121-8150-b710-1fcb">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82e1-d5f4-16cd-ec5f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a444-c2e8-7a61-f149" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="5b95-c40e-0641-542a" name="Inexperienced" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="96.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9121-8150-b710-1fcb" name="Regular" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="120.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6695-692f-e076-293c" name="Veteran" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="144.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="fd26-c2aa-f563-6f69" name="Light machine gun (LMG)" hidden="false" collective="false" import="true" targetId="815d-4a75-26a9-0cf4" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="name" value="Forward-facing LMG"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6527-0fc9-bd4c-6df3" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b50d-638e-c049-7530" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
       </costs>
