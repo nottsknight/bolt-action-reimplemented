@@ -1286,6 +1286,19 @@
         </modifier>
       </modifiers>
     </entryLink>
+    <entryLink id="8cf7-ae0a-3f81-0158" name="Lend-Lease M4A2 Sherman" hidden="true" collective="false" import="true" targetId="9d23-fe34-cd05-0aa7" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c435-2918-b171-daad" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <rules>
     <rule id="619c-631a-f9af-b3ca" name="The Great Patriotic War" publicationId="b31e-eb64-81f7-e19f" page="21" hidden="false">
@@ -9494,6 +9507,154 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a57b-32f1-3fa0-34a5" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e7c-9bcc-3d6e-f2df" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9d23-fe34-cd05-0aa7" name="Lend-Lease M4A2 Sherman" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="8686-818d-c0c9-a665" name="M4A2 Sherman 75mm" publicationId="c58a-61c4-c8c9-ff17" page="39" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
+          <modifiers>
+            <modifier type="set" field="5d9c-8a45-401f-0d72" value="Easily catches fire">
+              <conditions>
+                <condition field="selections" scope="9d23-fe34-cd05-0aa7" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3374-059a-9590-7710" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Mobility" typeId="4f3d-8de7-7a3c-86f2">Tracked</characteristic>
+            <characteristic name="Armour" typeId="800c-f0f8-35cd-bf26">Medium tank (9+)</characteristic>
+            <characteristic name="Special Rules" typeId="5d9c-8a45-401f-0d72">Open-topped</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="c61e-5a05-4451-eacf" name="Easily catches fire" publicationId="c58a-61c4-c8c9-ff17" page="40" hidden="false">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="9d23-fe34-cd05-0aa7" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3374-059a-9590-7710" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description>If this vehicle catches fire from damage, add D3 Pin markers instead of 1.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="c7bb-7f82-7aea-01be" name="Open-Topped" hidden="false" targetId="aabc-b1f8-3028-9ca3" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="229e-2df6-432a-e1fd" name="Tank, Tank Destroyer, Anti-aircraft vehicle or Self-propelled artillery" hidden="false" targetId="a405-25ce-0c16-362a" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="9f0e-4c0f-927e-6169" name="Gyro-stabilised turret-mounted medium AT gun w/ co-axial MMG" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8451-aca1-2ef2-c097" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c32-3f03-72e2-1841" type="min"/>
+          </constraints>
+          <rules>
+            <rule id="7db4-f171-bb4f-2aee" name="Gyro-stabilisers" publicationId="c58a-61c4-c8c9-ff17" page="20" hidden="false">
+              <description>A gyro-stabilised weapon does not suffer -1 to hit for moving and firing if the crew is Veteran.</description>
+            </rule>
+          </rules>
+          <entryLinks>
+            <entryLink id="9295-00fc-899b-90a6" name="Medium AT gun (75mm)" hidden="false" collective="false" import="true" targetId="3fb4-e3e2-7b88-e26a" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c7b-29d0-47d7-5626" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="680c-c554-67aa-2496" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="5725-c742-1626-7337" name="Medium machine gun (MMG)" hidden="false" collective="false" import="true" targetId="e03b-40d5-8524-f200" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29cc-0692-5df0-6cb4" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3161-e950-4a8a-acfb" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry id="3374-059a-9590-7710" name="Cancel &apos;Easily catches fire&apos;" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a80-50d6-021a-a5c6" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="8176-344d-039b-074a" value="10.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="cae8-415f-4415-a5de" name="Quality" hidden="false" collective="false" import="true" defaultSelectionEntryId="40cd-2dea-d246-af2e">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="651d-d1e4-3d65-9b0a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83d6-905c-c3f4-21ae" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="40cd-2dea-d246-af2e" name="Regular" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="195.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c975-b3f7-a721-7141" name="Inexperienced" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="156.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="eb79-bffa-cab2-0020" name="Veteran" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="244.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="979b-8a53-83ad-e6d9" name="Pintle-mount" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08c3-5a47-2055-c35d" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="2f6e-5e18-de17-4195" name="Pintle-mounted MMG" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="b4aa-b4d1-9b5a-8484" name="Medium machine gun (MMG)" hidden="false" collective="false" import="true" targetId="e03b-40d5-8524-f200" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="873d-b815-6fbc-e165" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b22-6e7d-7be1-d5f3" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="15.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3d5a-ecb1-ecb7-2bdd" name="Pintle-mounted HMG" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="3f9c-d971-ddd4-e741" name="Heavy machine gun (HMG)" hidden="false" collective="false" import="true" targetId="97d3-af62-cb17-9cb8" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5286-3a72-45ae-726d" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ddd3-8f4b-d0f8-6ba2" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="25.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="a05a-3284-339c-73cc" name="Armoured Platoon HQ" hidden="false" collective="false" import="true" targetId="9d4e-de79-9311-c725" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="8176-344d-039b-074a" value="25.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="b234-208c-9395-5601" name="Medium machine gun (MMG)" hidden="false" collective="false" import="true" targetId="e03b-40d5-8524-f200" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="name" value="Forward-facing hull-mounted MMG"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65fa-3d51-ed01-245f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2524-4084-e28d-f4fb" type="min"/>
           </constraints>
         </entryLink>
       </entryLinks>
