@@ -1273,6 +1273,19 @@
         </modifier>
       </modifiers>
     </entryLink>
+    <entryLink id="0172-71ea-814f-1bc8" name="Lend-Lease M10 Wolverine" hidden="true" collective="false" import="true" targetId="039d-8c73-8763-bbff" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c435-2918-b171-daad" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <rules>
     <rule id="619c-631a-f9af-b3ca" name="The Great Patriotic War" publicationId="b31e-eb64-81f7-e19f" page="21" hidden="false">
@@ -9403,6 +9416,85 @@
           <costs>
             <cost name="pts" typeId="8176-344d-039b-074a" value="25.0"/>
           </costs>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="039d-8c73-8763-bbff" name="Lend-Lease M10 Wolverine" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="36b9-b2fd-8240-1899" name="M10 Tank Destroyer" publicationId="c58a-61c4-c8c9-ff17" page="42" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
+          <characteristics>
+            <characteristic name="Mobility" typeId="4f3d-8de7-7a3c-86f2">Tracked</characteristic>
+            <characteristic name="Armour" typeId="800c-f0f8-35cd-bf26">Light tank (8+)</characteristic>
+            <characteristic name="Special Rules" typeId="5d9c-8a45-401f-0d72">Open-topped</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="340a-190a-5b16-0f62" name="Open-Topped" hidden="false" targetId="aabc-b1f8-3028-9ca3" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="1c03-3664-5cc8-bda9" name="Tank, Tank Destroyer, Anti-aircraft vehicle or Self-propelled artillery" hidden="false" targetId="a405-25ce-0c16-362a" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="d33f-0865-b49b-3221" name="Pintle-mounted HMG" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a131-a827-0aa0-5ea4" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="4ea1-989a-400c-3c58" name="Heavy machine gun (HMG)" hidden="false" collective="false" import="true" targetId="97d3-af62-cb17-9cb8" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f079-18d4-147f-904e" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c416-fb76-eacc-9370" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="8176-344d-039b-074a" value="25.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="4f31-93ba-c6fa-c849" name="Quality" hidden="false" collective="false" import="true" defaultSelectionEntryId="40e4-911c-c94e-546d">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c8d-432c-e06b-ab22" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0213-6615-ed13-eecd" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="40e4-911c-c94e-546d" name="Regular" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="180.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="fe2f-c9cb-fad7-8fa7" name="Inexperienced" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="144.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1ff6-9733-c3b7-19cb" name="Veteran" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="216.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="388a-d01a-4acb-9b87" name="Armoured Platoon HQ" hidden="false" collective="false" import="true" targetId="9d4e-de79-9311-c725" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="8176-344d-039b-074a" value="25.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="bee1-9742-93d6-e815" name="Heavy AT gun" hidden="false" collective="false" import="true" targetId="8d2d-0888-e8e4-e239" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="name" value="Turret-mounted heavy AT gun"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a57b-32f1-3fa0-34a5" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e7c-9bcc-3d6e-f2df" type="min"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
