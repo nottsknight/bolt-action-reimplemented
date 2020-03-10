@@ -96,6 +96,65 @@
         </categoryLink>
       </categoryLinks>
     </forceEntry>
+    <forceEntry id="8cf4-551a-0db9-7753" name="1940-44 -- Raiders!" hidden="false">
+      <rules>
+        <rule id="5a54-883c-f71d-d259" name="Been there, done that" publicationId="92e9-a650-d92d-aea1" page="69" hidden="false">
+          <description>All units must be Veteran quality.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="c049-59e0-7212-d77e" name="Headquarters" hidden="false" targetId="99f7-3a7f-2b02-82c6" primary="false"/>
+        <categoryLink id="12d0-4cae-a31c-7613" name="Infantry squad" hidden="false" targetId="3d6c-23ff-49ca-12f6" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9a0-534c-9ac3-45a6" type="min"/>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a145-b09f-6e15-bdda" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="87cb-086e-3897-c6da" name="Infantry support team" hidden="false" targetId="e032-f8f4-f470-ca21" primary="false"/>
+        <categoryLink id="0061-8830-adad-3fb9" name="OF-1" hidden="false" targetId="af73-813e-7e12-d4ba" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4690-fb2b-b36d-26b2" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc3b-b21a-d134-30f1" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="e9c8-b487-bb01-84cc" name="OF-2/3" hidden="false" targetId="46c9-3a4e-3237-5504" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d30-61b8-b4f3-bd92" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="2245-0d4e-c37f-ac25" name="Medic" hidden="false" targetId="d5f1-4499-9761-bf52" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="474e-aa1d-66bf-696c" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="f0cf-9c02-3d5d-0714" name="Forward Observer" hidden="false" targetId="dc8a-eb72-6f1b-1fa0" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="efe7-febb-367d-86a9" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="7f9e-de58-4ee0-8db8" name="Machine gun team" hidden="false" targetId="3d59-f50c-41d0-8831" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a71-6dbd-a9c2-685e" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="c2fd-d37b-c4d2-7f89" name="Anti-tank team" hidden="false" targetId="aeee-12b9-7555-e1ef" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7510-bcb8-8d97-36e6" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="67a1-4be6-e049-c4bb" name="Mortar team" hidden="false" targetId="dac9-6e79-6184-04ed" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90ee-e510-facf-ad74" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="4c03-b6cf-5c24-1a82" name="Sniper team" hidden="false" targetId="f447-d0f5-2d00-0718" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86de-0c8c-6fc0-d96c" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="35fa-1484-bbd0-dac6" name="Free units" hidden="false" targetId="4e86-7c1a-4400-e7ba" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
   </forceEntries>
   <selectionEntries>
     <selectionEntry id="1b47-7887-a9e9-bd15" name="Normandy Transport Vehicles" hidden="true" collective="false" import="true" type="upgrade">
@@ -572,6 +631,7 @@
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c435-2918-b171-daad" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb25-b02f-7c68-6cce" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8cf4-551a-0db9-7753" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -645,11 +705,20 @@
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c435-2918-b171-daad" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb25-b02f-7c68-6cce" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5641-3e6a-4262-1fee" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8cf4-551a-0db9-7753" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" field="44f1-5dec-f859-ad60" value="2.0">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8cf4-551a-0db9-7753" type="instanceOf"/>
+          </conditions>
+        </modifier>
       </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44f1-5dec-f859-ad60" type="min"/>
+      </constraints>
     </entryLink>
     <entryLink id="3053-6718-3189-5055" name="Cruiser Tank Challenger" hidden="true" collective="false" import="true" targetId="efbd-d506-eeb5-a877" type="selectionEntry">
       <modifiers>
@@ -1057,6 +1126,7 @@
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb25-b02f-7c68-6cce" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5641-3e6a-4262-1fee" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c4c-2f11-fee3-af96" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8cf4-551a-0db9-7753" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1161,6 +1231,7 @@
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb25-b02f-7c68-6cce" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5641-3e6a-4262-1fee" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c4c-2f11-fee3-af96" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8cf4-551a-0db9-7753" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1222,11 +1293,20 @@
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c435-2918-b171-daad" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb25-b02f-7c68-6cce" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5641-3e6a-4262-1fee" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8cf4-551a-0db9-7753" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" field="f8d6-ce37-c98f-f9d7" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8cf4-551a-0db9-7753" type="instanceOf"/>
+          </conditions>
+        </modifier>
       </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8d6-ce37-c98f-f9d7" type="max"/>
+      </constraints>
     </entryLink>
     <entryLink id="241f-8a4e-5f25-0c16" name="PIAT Anti-Tank Team" hidden="true" collective="false" import="true" targetId="e52e-2224-f87e-40ed" type="selectionEntry">
       <modifiers>
@@ -1374,6 +1454,7 @@
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c435-2918-b171-daad" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb25-b02f-7c68-6cce" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5641-3e6a-4262-1fee" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8cf4-551a-0db9-7753" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1405,6 +1486,7 @@
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb25-b02f-7c68-6cce" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5641-3e6a-4262-1fee" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c4c-2f11-fee3-af96" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8cf4-551a-0db9-7753" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
