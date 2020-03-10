@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="3aae-158e-d423-7629" name="Bolt Action Reimplemented" revision="6" battleScribeVersion="2.03" authorName="Ian Knight" authorContact="ian@nottsknight.uk" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="3aae-158e-d423-7629" name="Bolt Action Reimplemented" revision="7" battleScribeVersion="2.03" authorName="Ian Knight" authorContact="ian@nottsknight.uk" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="ec7d-71bb-0022-d2a4" name="Bolt Action Second Edition"/>
     <publication id="92e9-a650-d92d-aea1" name="Armies of Great Britain"/>
