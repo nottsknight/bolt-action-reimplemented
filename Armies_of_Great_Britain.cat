@@ -10348,7 +10348,10 @@
         <categoryLink id="b8f7-552e-7d9c-7606" name="Armoured Car" hidden="false" targetId="fc66-af4d-84ec-3c93" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="b9f6-fbbc-90a9-a7e3" name="Lewis LMG with all-round arc" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="b9f6-fbbc-90a9-a7e3" name="Lewis LMG with all-round arc (1-2)" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="name" value="Lewis LMG with all-round arc"/>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44db-626b-c83e-6e72" type="min"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23f6-7d72-5b9d-c655" type="max"/>
@@ -10361,6 +10364,9 @@
               </constraints>
             </entryLink>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="68e8-5d09-2060-00c2" name=" Rear-facing platform-mounted heavy autocannon" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
