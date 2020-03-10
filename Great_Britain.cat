@@ -164,6 +164,10 @@
             <entryLink id="9b64-df15-8696-75d0" name="Bren Carrier" hidden="false" collective="false" import="true" targetId="d916-6a96-26ea-857e" type="selectionEntry"/>
             <entryLink id="4db1-de80-c7f0-2cb5" name="15cwt Truck" hidden="false" collective="false" import="true" targetId="2d0b-e6b6-72a9-ef9f" type="selectionEntry"/>
             <entryLink id="3d85-caf4-955a-41e7" name="30cwt Truck" hidden="false" collective="false" import="true" targetId="d421-3d7d-ae72-8cb1" type="selectionEntry"/>
+            <entryLink id="3d9d-7c12-b4b1-95dc" name="Quad Tractor" hidden="false" collective="false" import="true" targetId="e5bc-e5da-c52c-c680" type="selectionEntry"/>
+            <entryLink id="7bcb-f4e0-0cfc-ab34" name="Matador Artillery Tractor" hidden="false" collective="false" import="true" targetId="6720-dadb-a9c9-e7e3" type="selectionEntry"/>
+            <entryLink id="53f0-d820-1a99-8ef4" name="Scammell Pioneer Artillery Tractor" hidden="false" collective="false" import="true" targetId="b3fe-f70c-f46d-f61a" type="selectionEntry"/>
+            <entryLink id="0725-9616-5961-d7df" name="Terrapin Amphibious Truck" hidden="false" collective="false" import="true" targetId="a5e5-0b7e-7415-b7bf" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -198,7 +202,14 @@
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64b2-91c8-2376-57b3" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="c8cc-80ab-3a28-ba3f" name="Regular Infantry Section (Mid-/Late-War)" hidden="false" collective="false" import="true" targetId="5150-035b-5615-bdf8" type="selectionEntry"/>
+            <entryLink id="c8cc-80ab-3a28-ba3f" name="Regular Infantry Section (Mid-/Late-War)" hidden="false" collective="false" import="true" targetId="5150-035b-5615-bdf8" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="a889-bc03-6765-7cdd" value="0.0"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a889-bc03-6765-7cdd" type="min"/>
+              </constraints>
+            </entryLink>
             <entryLink id="72ce-49d0-ec35-487d" name="Inexperienced Infantry Section (Mid-/Late-War)" hidden="false" collective="false" import="true" targetId="00ea-6bd7-82b1-ed57" type="selectionEntry"/>
             <entryLink id="68ab-d8b7-8b23-4dd7" name="Veteran Infantry Section (Late-War)" hidden="false" collective="false" import="true" targetId="2a05-e9de-ec4a-8174" type="selectionEntry"/>
             <entryLink id="9250-fb8c-046c-09a2" name="Paratroop Section" hidden="false" collective="false" import="true" targetId="5d60-5799-2ee7-2c97" type="selectionEntry"/>
@@ -1347,6 +1358,7 @@
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c435-2918-b171-daad" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb25-b02f-7c68-6cce" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5641-3e6a-4262-1fee" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1361,6 +1373,7 @@
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c435-2918-b171-daad" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb25-b02f-7c68-6cce" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5641-3e6a-4262-1fee" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2207,6 +2220,7 @@
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c435-2918-b171-daad" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb25-b02f-7c68-6cce" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c4c-2f11-fee3-af96" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5641-3e6a-4262-1fee" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
