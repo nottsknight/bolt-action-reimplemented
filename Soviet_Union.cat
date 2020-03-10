@@ -1364,6 +1364,19 @@
         </modifier>
       </modifiers>
     </entryLink>
+    <entryLink id="e3f2-01b6-b4b0-2cc9" name="Lend-Lease Matilda II &amp; II CS" hidden="true" collective="false" import="true" targetId="027b-d72f-2789-bd0c" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c435-2918-b171-daad" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <rules>
     <rule id="619c-631a-f9af-b3ca" name="The Great Patriotic War" publicationId="b31e-eb64-81f7-e19f" page="21" hidden="false">
@@ -10360,6 +10373,85 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="027b-d72f-2789-bd0c" name="Lend-Lease Matilda II &amp; II CS" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="63a8-6689-9e3c-130d" name="Infantry Tank Mk II Matilda II &amp; II CS" publicationId="92e9-a650-d92d-aea1" page="42" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
+          <characteristics>
+            <characteristic name="Mobility" typeId="4f3d-8de7-7a3c-86f2">Tracked</characteristic>
+            <characteristic name="Armour" typeId="800c-f0f8-35cd-bf26">Medium tank (9+)</characteristic>
+            <characteristic name="Special Rules" typeId="5d9c-8a45-401f-0d72">Slow</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="0ee2-9808-7622-4294" name="Slow" hidden="false" targetId="f588-9b83-2356-ae6c" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="cd70-5930-d1e9-6aaf" name="Tank, Tank Destroyer, Anti-aircraft vehicle or Self-propelled artillery" hidden="false" targetId="a405-25ce-0c16-362a" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="c392-f041-4413-b4de" name="Quality" hidden="false" collective="false" import="true" defaultSelectionEntryId="7f04-af8e-58f5-920f">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="84e0-fef2-afd3-e65e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2586-8d6e-5047-ec2d" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="7f04-af8e-58f5-920f" name="Regular" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="155.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="66b4-436b-1139-dd46" name="Inexperienced" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="124.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2a53-9261-f001-5b20" name="Veteran" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="186.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="8935-46ad-1db3-1ded" name="Turret mount" hidden="false" collective="false" import="true" defaultSelectionEntryId="9cc5-aedc-52a1-37f8">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="717d-0445-2c03-1724" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ced1-ed54-96dc-2707" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="9cc5-aedc-52a1-37f8" name="Light AT gun" hidden="false" collective="false" import="true" targetId="a2d0-22d0-c0f5-bf97" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Turret-mounted light AT gun"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="81b5-3190-e336-616e" name="Light howitzer" hidden="false" collective="false" import="true" targetId="0bdd-bb06-2c30-3eff" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Turret-mounted 3-inch light howitzer"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="68bb-5b6f-10a8-a2e0" name="Medium machine gun (MMG)" hidden="false" collective="false" import="true" targetId="e03b-40d5-8524-f200" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="name" value="Co-axial MMG"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b95b-2943-aa4b-c602" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e380-d8ed-0bc3-4fc3" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="5ce3-87e8-692d-bc80" name="Armoured Platoon HQ" hidden="false" collective="false" import="true" targetId="9d4e-de79-9311-c725" type="selectionEntry">
+          <costs>
+            <cost name="pts" typeId="8176-344d-039b-074a" value="25.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
       </costs>
