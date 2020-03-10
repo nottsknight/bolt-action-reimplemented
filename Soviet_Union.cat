@@ -1338,6 +1338,19 @@
         </modifier>
       </modifiers>
     </entryLink>
+    <entryLink id="09f2-51b3-4f34-508b" name="Lend-Lease M3 Scout Car" hidden="true" collective="false" import="true" targetId="27d3-7e27-b125-6e5e" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c435-2918-b171-daad" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <rules>
     <rule id="619c-631a-f9af-b3ca" name="The Great Patriotic War" publicationId="b31e-eb64-81f7-e19f" page="21" hidden="false">
@@ -9813,7 +9826,7 @@
         <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f850-2d49-e742-3863" name="Lend Lease Churchill I-VI &amp; II CS" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="f850-2d49-e742-3863" name="Lend-Lease Churchill I-VI &amp; II CS" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="04c7-bd24-c73f-f1b6" name="Infantry Tank Mk IV Churchill I-VI &amp; II CS" publicationId="92e9-a650-d92d-aea1" page="44" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
           <characteristics>
@@ -10150,6 +10163,118 @@
       <costs>
         <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="27d3-7e27-b125-6e5e" name="Lend-Lease M3 Scout Car" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="f49f-8c6a-8419-3b46" name="Armoured Car" hidden="false" targetId="fc66-af4d-84ec-3c93" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="72d6-021c-bc30-c4dc" name="Pintle-mounted MMG (right &amp; rear arc)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a00a-824a-c0a9-6d70" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="4c06-5d81-ca1c-17d8" name="Medium machine gun (MMG)" hidden="false" collective="false" import="true" targetId="e03b-40d5-8524-f200" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f402-692a-0d85-9d70" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d1e-26db-88d3-708d" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="8176-344d-039b-074a" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="fc73-6449-43b1-b254" name="Pintle-mounted MMG (left &amp; rear arc)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54e7-e6be-2018-2d08" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="32eb-a449-e4c1-22d9" name="Medium machine gun (MMG)" hidden="false" collective="false" import="true" targetId="e03b-40d5-8524-f200" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac37-f389-0ae6-4301" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="871e-b738-0005-ba10" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="8176-344d-039b-074a" value="15.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="00b1-c285-7a73-55c9" name="Quality" hidden="false" collective="false" import="true" defaultSelectionEntryId="a158-21a6-6f87-9535">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef75-2ee7-175a-d609" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f70b-a1e5-d8f5-caca" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="6e8a-53ad-8686-d9e2" name="Inexperienced" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="69.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a158-21a6-6f87-9535" name="Regular" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="86.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2104-d583-a338-8862" name="Veteran" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="103.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="5c4a-21a1-f7e4-1ea3" name="Variant" hidden="false" collective="false" import="true" defaultSelectionEntryId="ed8c-2ea0-9f97-0fb4">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dca7-977a-9b12-0c1c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e61-25e5-1726-20cf" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="ed8c-2ea0-9f97-0fb4" name="Transport variant" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="99ec-b78e-dfe5-6849" name="M3 White Scout Car" publicationId="c58a-61c4-c8c9-ff17" page="48" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
+                  <characteristics>
+                    <characteristic name="Mobility" typeId="4f3d-8de7-7a3c-86f2">Wheeled</characteristic>
+                    <characteristic name="Armour" typeId="800c-f0f8-35cd-bf26">Armoured car (7+)</characteristic>
+                    <characteristic name="Special Rules" typeId="5d9c-8a45-401f-0d72">Open-topped, Transport (8), Tow (light or medium AT gun; light howitzer; light AA gun)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="7bb9-bc93-db9f-bffe" name="Open-Topped" hidden="false" targetId="aabc-b1f8-3028-9ca3" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="d919-7422-d559-be31" name="Recce variant" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="ca12-2078-18d8-5fa8" name="M3 White Scout Car" publicationId="c58a-61c4-c8c9-ff17" page="48" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
+                  <characteristics>
+                    <characteristic name="Mobility" typeId="4f3d-8de7-7a3c-86f2">Wheeled</characteristic>
+                    <characteristic name="Armour" typeId="800c-f0f8-35cd-bf26">Armoured car (7+)</characteristic>
+                    <characteristic name="Special Rules" typeId="5d9c-8a45-401f-0d72">Open-topped, Recce, Tow (light or medium AT gun; light howitzer; light AA gun)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="6cd1-6fef-715d-ebc8" name="Open-Topped" hidden="false" targetId="aabc-b1f8-3028-9ca3" type="rule"/>
+                <infoLink id="eb65-a73a-ce7f-8be0" name="Recce" hidden="false" targetId="211d-a0f1-3ec7-87e3" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="f8c0-44c2-52f5-4954" name="Heavy machine gun (HMG)" hidden="false" collective="false" import="true" targetId="97d3-af62-cb17-9cb8" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="name" value="Pintle-mounted HMG (front arc)"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7dad-e774-e359-e7e7" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21da-3f70-44fb-cf3a" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
