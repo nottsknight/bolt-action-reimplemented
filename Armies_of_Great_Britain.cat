@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8649-0e8b-8d82-e44d" name="Armies of Great Britain" revision="6" battleScribeVersion="2.03" authorName="NottsKnight" authorContact="ian@nottsknight.uk" authorUrl="http://nottsknight.uk" library="true" gameSystemId="3aae-158e-d423-7629" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="8649-0e8b-8d82-e44d" name="Armies of Great Britain" revision="7" battleScribeVersion="2.03" authorName="NottsKnight" authorContact="ian@nottsknight.uk" authorUrl="http://nottsknight.uk" library="true" gameSystemId="3aae-158e-d423-7629" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="9acc-3e46-06d6-b9cf" name="National Characteristic">
       <characteristicTypes>
@@ -9864,6 +9864,9 @@
               </constraints>
             </entryLink>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="eaa6-0933-3839-fd9b" name="Pintle-mounted HMG (right &amp; rear arcs)" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -10158,6 +10161,9 @@
               </constraints>
             </entryLink>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="ad12-cbfe-e731-10f6" name="Pintle-mounted light autocannon (all round)" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -10246,6 +10252,72 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cf40-a83a-d0a8-a257" name="Wasp Flamethrower Carrier" hidden="false" collective="false" import="true" type="model">
+      <infoLinks>
+        <infoLink id="e267-a790-e0a9-4776" name="Open-Topped" hidden="false" targetId="aabc-b1f8-3028-9ca3" type="rule"/>
+        <infoLink id="60c8-6983-0575-9ee4" name="Turn on the spot" hidden="false" targetId="a6d6-1f0f-8fb2-c79d" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="e6be-cdc7-823e-2bc8" name="Tank, Tank Destroyer, Anti-aircraft vehicle or Self-propelled artillery" hidden="false" targetId="a405-25ce-0c16-362a" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="a24d-56cb-c365-437e" name="Forward-facing pintle-mounted LMG" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54eb-dbc4-b745-6c11" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="dfff-191e-8402-4287" name="Light machine gun (LMG)" hidden="false" collective="false" import="true" targetId="815d-4a75-26a9-0cf4" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1394-e11a-82d2-2293" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bb3-5af9-d2fa-aafe" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="8176-344d-039b-074a" value="10.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="7c32-6e4d-56ff-4927" name="Quality" hidden="false" collective="false" import="true" defaultSelectionEntryId="afdd-8b83-3bb5-f9f7">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="deb0-60ee-67ac-72cc" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6855-5e88-f834-e352" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="1af0-474f-6707-77c7" name="Veteran" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="120.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="afdd-8b83-3bb5-f9f7" name="Regular" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="100.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a045-8c5c-bd75-9789" name="Inexperienced" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="80.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="3ded-defd-fd48-d97e" name="Flamethrower (vehicle)" hidden="false" collective="false" import="true" targetId="d21a-e2ed-9c40-085b" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="name" value="Forward-facing flamethrower"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c53-4069-81d9-3a9d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce8b-d181-23e2-c1e0" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
       </costs>
