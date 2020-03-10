@@ -8,6 +8,7 @@
     <publication id="b31e-eb64-81f7-e19f" name="Armies of the Soviet Union"/>
     <publication id="5b13-0df8-0b6a-dd7f" name="Armies of Imperial Japan"/>
     <publication id="c58a-61c4-c8c9-ff17" name="Armies of the United States"/>
+    <publication id="9a69-da4c-3ca0-1b67" name="Tank War"/>
   </publications>
   <costTypes>
     <costType id="8176-344d-039b-074a" name="pts" defaultCostLimit="-1.0"/>
@@ -164,7 +165,7 @@
     </forceEntry>
     <forceEntry id="fb25-b02f-7c68-6cce" name="1939-45 -- Armoured Platoon" hidden="false">
       <rules>
-        <rule id="008b-94fb-1aad-bf65" name="1939-45 -- Armoured Platoon" hidden="false">
+        <rule id="008b-94fb-1aad-bf65" name="1939-45 -- Armoured Platoon" publicationId="9a69-da4c-3ca0-1b67" page="11" hidden="false">
           <description>This force must include enough transport vehicles to transport all models in infantry and artillery units attached to the platoon, up to a maximum of 1 vehicle per infantry and artillery unit.	</description>
         </rule>
       </rules>
