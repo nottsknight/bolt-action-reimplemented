@@ -424,6 +424,20 @@
         </modifier>
       </modifiers>
     </entryLink>
+    <entryLink id="9cef-6516-902f-819b" name="M6 Gun Motor Carriage" hidden="true" collective="false" import="true" targetId="a964-0179-8db6-9be9" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c435-2918-b171-daad" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb25-b02f-7c68-6cce" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <rules>
     <rule id="994d-93ee-5dd8-0055" name="Fire and Manoeuvre" publicationId="c58a-61c4-c8c9-ff17" page="20" hidden="false">
@@ -2884,6 +2898,56 @@
       <costs>
         <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="a964-0179-8db6-9be9" name="M6 Gun Motor Carriage" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="8f6c-a355-7100-8a14" name="M6 Gun Motor Carriage" publicationId="c58a-61c4-c8c9-ff17" page="42" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
+          <characteristics>
+            <characteristic name="Mobility" typeId="4f3d-8de7-7a3c-86f2">Wheeled</characteristic>
+            <characteristic name="Armour" typeId="800c-f0f8-35cd-bf26">Soft-skinned (6+)</characteristic>
+            <characteristic name="Special Rules" typeId="5d9c-8a45-401f-0d72"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="0eb7-a12a-127e-d858" name="Tank, Tank Destroyer, Anti-aircraft vehicle or Self-propelled artillery" hidden="false" targetId="a405-25ce-0c16-362a" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="00cb-2142-902b-35eb" name="Quality" hidden="false" collective="false" import="true" defaultSelectionEntryId="68c3-a6e0-ae9a-5807">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b699-3b03-dfe0-6263" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0dbd-6986-15e7-a0f2" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="595d-0987-f15c-8db0" name="Inexperienced" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="52.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="68c3-a6e0-ae9a-5807" name="Regular" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="65.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="69d5-1f72-da79-8c28" name="Veteran" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="78.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="a0b2-fdd2-b677-88e9" name="Light AT gun" hidden="false" collective="false" import="true" targetId="a2d0-22d0-c0f5-bf97" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="name" value="Rear-facing light AT gun (right, left, and rear arcs)"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aff2-04cb-c2e1-7b52" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3676-295b-b417-146a" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
