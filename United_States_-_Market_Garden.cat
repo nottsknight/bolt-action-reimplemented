@@ -3,6 +3,192 @@
   <publications>
     <publication id="6ce7-7708-b16c-24d1" name="Campaign Market Garden"/>
   </publications>
+  <forceEntries>
+    <forceEntry id="a122-b63f-3154-0c58" name="Market Garden - American Reinforced Parachute Platoon" hidden="false">
+      <categoryLinks>
+        <categoryLink id="f61e-1cc5-f256-4d98" name="Headquarters" hidden="false" targetId="99f7-3a7f-2b02-82c6" primary="false"/>
+        <categoryLink id="08aa-d8a1-dc04-ef8b" name="Infantry squad" hidden="false" targetId="3d6c-23ff-49ca-12f6" primary="false"/>
+        <categoryLink id="91a9-ead9-2d1f-aabe" name="Infantry support team" hidden="false" targetId="e032-f8f4-f470-ca21" primary="false"/>
+        <categoryLink id="bbc3-4b56-ff20-662a" name="Field Artillery, Anti-aircraft or Anti-tank gun" hidden="false" targetId="382d-6b90-2595-2882" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a216-5967-9757-cd5d" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="ef17-25a3-1b72-cadb" name="Armoured Car" hidden="false" targetId="fc66-af4d-84ec-3c93" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fda-39ec-c1b6-79e3" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="44a6-27f8-0e6c-50f0" name="Transport vehicle or tow" hidden="false" targetId="5cba-21ae-7dae-8fc7" primary="false"/>
+        <categoryLink id="9b32-0e86-58d0-750c" name="OF-1" hidden="false" targetId="af73-813e-7e12-d4ba" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b999-c184-4c8e-d464" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3aeb-0d65-6ae9-d831" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="c694-8547-f325-04c1" name="OF-2/3" hidden="false" targetId="46c9-3a4e-3237-5504" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f6d-c736-8fbb-a5f2" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="df63-9bbe-af2c-7fba" name="Medic" hidden="false" targetId="d5f1-4499-9761-bf52" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9732-3571-72ed-fecd" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="2a50-cd0a-3d04-98ca" name="Mortar team" hidden="false" targetId="dac9-6e79-6184-04ed" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb36-92aa-a9d4-258d" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="e3a8-37e5-39c9-da1d" name="Machine gun team" hidden="false" targetId="3d59-f50c-41d0-8831" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bd9-6fc5-83f1-a1c6" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="f2b7-9d3d-91d8-212e" name="Anti-tank team" hidden="false" targetId="aeee-12b9-7555-e1ef" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ccff-6cb8-f3e4-1225" type="max"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <selectionEntries>
+    <selectionEntry id="28fc-5de7-4ea4-8bb5" name="Parachute Compulsory Infantry" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a122-b63f-3154-0c58" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="1584-deb9-131b-70bc" name="Infantry squad" hidden="false" targetId="3d6c-23ff-49ca-12f6" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="2cb7-cb11-e837-be87" name="Infantry squads" hidden="false" collective="false" import="true" defaultSelectionEntryId="cff6-8e7d-ea67-0d52">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7214-2548-08b5-f49c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6016-1553-a90c-cd6b" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="cff6-8e7d-ea67-0d52" name="2x Paratrooper Squads" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="2e9e-f99e-2522-3021" name="Paratrooper Squad" hidden="false" collective="false" import="true" targetId="a51c-8cb3-4231-2cea" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7067-7286-845c-2e32" type="max"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a9b-465e-3f5a-be0c" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="497f-9d40-d35b-4077" name="2x Pathfinder Squads" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="0cad-7683-ba9c-9f41" name="US Pathfinders" hidden="false" collective="false" import="true" targetId="7a0b-d2f3-0ec3-2f34" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5da-344b-62a8-9c9d" type="max"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97bc-eb60-de4f-7ef7" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+  </selectionEntries>
+  <entryLinks>
+    <entryLink id="2866-0715-ad70-5c8d" name="Paratrooper Squad" hidden="true" collective="false" import="true" targetId="a51c-8cb3-4231-2cea" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a122-b63f-3154-0c58" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="9bf3-c17a-4815-1082" name="US Pathfinders" hidden="true" collective="false" import="true" targetId="7a0b-d2f3-0ec3-2f34" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a122-b63f-3154-0c58" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="1616-9db2-19b9-b172" name="Light Mortar Team (M2)" hidden="true" collective="false" import="true" targetId="998f-f04f-3d28-5659" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a122-b63f-3154-0c58" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="1389-d7c3-9ee0-256a" name="Medium Machine Gun Team" hidden="true" collective="false" import="true" targetId="8365-81cb-ba59-8382" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a122-b63f-3154-0c58" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="0b63-6a81-2118-a958" name="Bazooka Team" hidden="true" collective="false" import="true" targetId="2365-d9d3-950b-c235" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a122-b63f-3154-0c58" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="1c69-63e1-7dca-2846" name="US Airborne Armoured Jeep" hidden="true" collective="false" import="true" targetId="f197-4722-cf4a-f251" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a122-b63f-3154-0c58" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="ce13-5acc-6062-f6c9" name="57mm Anti-tank Gun M1" hidden="true" collective="false" import="true" targetId="d9f5-2c36-a4de-4d10" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a122-b63f-3154-0c58" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="e350-fd3a-c3f6-2f41" value="2.0">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a122-b63f-3154-0c58" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e350-fd3a-c3f6-2f41" type="max"/>
+      </constraints>
+    </entryLink>
+    <entryLink id="12da-013f-daaa-53d5" name="Light Artillery (M1A1)" hidden="true" collective="false" import="true" targetId="46fb-6b07-97a0-1aa1" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a122-b63f-3154-0c58" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="3f59-3977-68e9-5aee" name="Medium Artillery (M2A1)" hidden="true" collective="false" import="true" targetId="adf5-7a0d-cdaf-5b5a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a122-b63f-3154-0c58" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+  </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="7a0b-d2f3-0ec3-2f34" name="US Pathfinders" hidden="false" collective="false" import="true" type="unit">
       <rules>
@@ -52,8 +238,8 @@
             </selectionEntry>
             <selectionEntry id="560b-9a7a-a369-333f" name="Veteran soldier w/ rifle" hidden="false" collective="false" import="true" type="model">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6790-d9d0-fd92-41ab" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4735-0615-880a-d7f0" type="min"/>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6790-d9d0-fd92-41ab" type="max"/>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4735-0615-880a-d7f0" type="min"/>
               </constraints>
               <entryLinks>
                 <entryLink id="e131-3922-cd86-a4df" name="Rifle" hidden="false" collective="false" import="true" targetId="51ce-2262-956b-9c44" type="selectionEntry">
@@ -92,6 +278,9 @@
       <infoLinks>
         <infoLink id="7dfe-4281-fd35-7212" name="Recce" hidden="false" targetId="211d-a0f1-3ec7-87e3" type="rule"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink id="9eda-a99a-66fa-840d" name="Armoured Car" hidden="false" targetId="fc66-af4d-84ec-3c93" primary="true"/>
+      </categoryLinks>
       <entryLinks>
         <entryLink id="e1b6-f5ba-465e-9454" name="Heavy machine gun (HMG)" hidden="false" collective="false" import="true" targetId="97d3-af62-cb17-9cb8" type="selectionEntry">
           <modifiers>
