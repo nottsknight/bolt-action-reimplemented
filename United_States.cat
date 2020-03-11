@@ -410,6 +410,20 @@
         </modifier>
       </modifiers>
     </entryLink>
+    <entryLink id="a4ba-0a51-04f8-7a18" name="M3 75mm (T12) Gun Motor Carriage" hidden="true" collective="false" import="true" targetId="ef55-8459-15b9-0297" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c435-2918-b171-daad" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb25-b02f-7c68-6cce" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <rules>
     <rule id="994d-93ee-5dd8-0055" name="Fire and Manoeuvre" publicationId="c58a-61c4-c8c9-ff17" page="20" hidden="false">
@@ -2775,6 +2789,98 @@
           </constraints>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ef55-8459-15b9-0297" name="M3 75mm (T12) Gun Motor Carriage" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="3585-b576-7ea0-10c8" name="M3 75mm (T12) Gun Motor Carriage" publicationId="c58a-61c4-c8c9-ff17" page="42" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
+          <characteristics>
+            <characteristic name="Mobility" typeId="4f3d-8de7-7a3c-86f2">Tracked</characteristic>
+            <characteristic name="Armour" typeId="800c-f0f8-35cd-bf26">Armoured carrier (7+)</characteristic>
+            <characteristic name="Special Rules" typeId="5d9c-8a45-401f-0d72">Open-topped</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="d833-84f6-dfd9-f9ee" name="Open-Topped" hidden="false" targetId="aabc-b1f8-3028-9ca3" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="8414-44a7-6b7e-aecd" name="Tank, Tank Destroyer, Anti-aircraft vehicle or Self-propelled artillery" hidden="false" targetId="a405-25ce-0c16-362a" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="9d0e-061f-fc11-e133" name="Pintle-mounted rear-facing MMG" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e56-25ad-f7e7-169e" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="6917-8cfa-2e75-0c3f" name="Medium machine gun (MMG)" hidden="false" collective="false" import="true" targetId="e03b-40d5-8524-f200" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fce-836c-3190-bb5a" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a932-73bd-ab61-68dd" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="8176-344d-039b-074a" value="10.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="534c-2f16-38f3-c4d7" name="Quality" hidden="false" collective="false" import="true" defaultSelectionEntryId="d1b9-2864-813f-b918">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f331-1ad8-07cc-c910" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="924e-ecae-9fda-8405" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="70fb-c359-0c21-f499" name="Inexperienced" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="96.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d1b9-2864-813f-b918" name="Regular" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="120.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="451a-617b-337e-9525" name="Veteran" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="144.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="0b66-4a6c-443d-5148" name="Medium AT gun (75mm)" hidden="false" collective="false" import="true" targetId="d983-631d-5fda-92cd" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="name" value="Turret-mounted front-facing medium AT gun"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3f2-9a0e-e1e5-3715" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="330e-2bbe-5a35-7acc" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="d983-631d-5fda-92cd" name="Medium AT gun (75mm)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="e437-a1b3-5839-ae4c" name="Medium AT gun (75mm)" publicationId="c58a-61c4-c8c9-ff17" page="42" hidden="false" typeId="4e19-6ce9-3597-0d80" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="a466-872d-e405-3443">60&quot;</characteristic>
+            <characteristic name="Shots" typeId="93dc-7790-be40-fc65">1</characteristic>
+            <characteristic name="Pen" typeId="97a7-3112-b4cb-acc1">+5</characteristic>
+            <characteristic name="Special Rules" typeId="3e84-e758-03ca-4a13">Team, Fixed, HE (2&quot;)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="502e-5e1a-9ee4-3596" name="Team Weapon" hidden="false" targetId="8d66-1050-acd4-aea3" type="rule"/>
+        <infoLink id="2ef3-05d6-d2f7-d60a" name="Fixed" hidden="false" targetId="827f-6b6e-bb8b-7f02" type="rule"/>
+        <infoLink id="6d78-61f4-a98d-8120" name="High Explosive" hidden="false" targetId="772f-0ef7-5063-f529" type="rule"/>
+        <infoLink id="d443-8ac0-b2b5-54a3" name="HE (2&quot;)" hidden="false" targetId="0f32-7156-b477-5ce9" type="profile"/>
+      </infoLinks>
       <costs>
         <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
       </costs>
