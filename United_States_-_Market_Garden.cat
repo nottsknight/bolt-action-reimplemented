@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="8ada-b43c-4a19-458d" name="United States - Market Garden" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="3aae-158e-d423-7629" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <publications>
+    <publication id="6ce7-7708-b16c-24d1" name="Campaign Market Garden"/>
+  </publications>
+  <sharedSelectionEntries>
+    <selectionEntry id="7a0b-d2f3-0ec3-2f34" name="US Pathfinders" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="e8c8-f14e-6420-c8b7" name="Exceptional training" publicationId="6ce7-7708-b16c-24d1" page="19" hidden="false">
+          <description>This unit always uses is unmodified Morale of 10 for any tests using it.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="480f-ef85-32b6-9497" name="Infantry squad" hidden="false" targetId="3d6c-23ff-49ca-12f6" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d33c-3545-1565-c3eb" name="Veteran soldiers" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="d0b7-609a-bb9b-f1f1" name="Veteran NCO" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6459-af0e-087d-f8fd" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="701b-30a0-a25b-2c21" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="44d6-bb87-6c20-c792" name="Submachine gun (SMG)" hidden="false" collective="false" import="true" targetId="653a-6daf-f95e-150c" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e470-b391-23f9-1368" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fd2-7ba6-7289-88da" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="16.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="fdda-b928-5bf0-4fde" name="Veteran soldier w/ SMG" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1509-6682-40c4-35d5" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a3c-ce12-3f6e-a700" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="b764-0eae-04ab-d61c" name="Submachine gun (SMG)" hidden="false" collective="false" import="true" targetId="653a-6daf-f95e-150c" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86c6-1c0a-4e55-0416" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7519-1524-4c6c-4735" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="16.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="560b-9a7a-a369-333f" name="Veteran soldier w/ rifle" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6790-d9d0-fd92-41ab" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4735-0615-880a-d7f0" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="e131-3922-cd86-a4df" name="Rifle" hidden="false" collective="false" import="true" targetId="51ce-2262-956b-9c44" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19bf-976b-601c-8cf7" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0bee-db5b-6c7c-4d0b" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="16.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="5ff0-591e-84e4-b384" name="Anti-tank grenades" hidden="false" collective="false" import="true" targetId="581a-f530-e19b-2ffd" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="f197-4722-cf4a-f251" name="US Airborne Armoured Jeep" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="c95d-46f1-0dd4-5448" name="US Airborne Armoured Jeep" publicationId="6ce7-7708-b16c-24d1" page="21" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
+          <characteristics>
+            <characteristic name="Mobility" typeId="4f3d-8de7-7a3c-86f2">Wheeled</characteristic>
+            <characteristic name="Armour" typeId="800c-f0f8-35cd-bf26">Soft-skinned (6+)</characteristic>
+            <characteristic name="Special Rules" typeId="5d9c-8a45-401f-0d72">Recce, Frontal armour</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="cdc9-8db8-1989-dcff" name="Frontal armour" publicationId="6ce7-7708-b16c-24d1" page="21" hidden="false">
+          <description>Cannot be damaged by small arms fire from the front arc (but can still be pinned).</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="7dfe-4281-fd35-7212" name="Recce" hidden="false" targetId="211d-a0f1-3ec7-87e3" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="e1b6-f5ba-465e-9454" name="Heavy machine gun (HMG)" hidden="false" collective="false" import="true" targetId="97d3-af62-cb17-9cb8" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="name" value="Pintle-mounted HMG (all round)"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e320-9b5c-77e0-670f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b35-cc8e-cf09-1b15" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="8176-344d-039b-074a" value="72.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <catalogueLinks>
+    <catalogueLink id="7a0e-f25d-58f3-53d8" name="United States" targetId="881b-632b-f67f-7555" type="catalogue" importRootEntries="false"/>
+  </catalogueLinks>
+</catalogue>
