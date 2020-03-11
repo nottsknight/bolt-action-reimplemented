@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="881b-632b-f67f-7555" name="United States" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="3aae-158e-d423-7629" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="881b-632b-f67f-7555" name="United States" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="3aae-158e-d423-7629" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="a08c-ed97-112f-2fcd" name="US Medium Machine Gun Teams" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
