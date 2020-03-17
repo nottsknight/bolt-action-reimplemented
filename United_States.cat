@@ -1754,6 +1754,10 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="8365-81cb-ba59-8382" name="Medium Machine Gun Team" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="c59e-6c2b-6508-e6a5" name="Infantry support team" hidden="false" targetId="e032-f8f4-f470-ca21" primary="true"/>
+        <categoryLink id="4a32-e58a-1907-7afc" name="Machine gun team" hidden="false" targetId="3d59-f50c-41d0-8831" primary="false"/>
+      </categoryLinks>
       <selectionEntries>
         <selectionEntry id="009d-7e52-8c4b-e44c" name="Crew" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -3426,6 +3430,9 @@
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -3435,9 +3442,21 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df5b-26fa-dc45-ce34" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="5205-fb57-dff0-6159" name="Inexperienced" hidden="false" collective="false" import="true" type="upgrade"/>
-            <selectionEntry id="94d5-32f5-3c74-e3a9" name="Regular" hidden="false" collective="false" import="true" type="upgrade"/>
-            <selectionEntry id="29c1-24d6-0b3e-0582" name="Veteran" hidden="false" collective="false" import="true" type="upgrade"/>
+            <selectionEntry id="5205-fb57-dff0-6159" name="Inexperienced" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="94d5-32f5-3c74-e3a9" name="Regular" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="29c1-24d6-0b3e-0582" name="Veteran" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="4327-dcf8-3f91-2f25" name="Rank" hidden="false" collective="false" import="true" defaultSelectionEntryId="a594-cdc9-e633-a735">
@@ -3464,6 +3483,9 @@
                   </conditions>
                 </modifier>
               </modifiers>
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="59b6-eca6-fdb6-f2fe" name="(OF-1b) 1st Lieutenant" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -3483,6 +3505,9 @@
                   </conditions>
                 </modifier>
               </modifiers>
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="41fd-d9c5-2bf5-88b3" name="(OF-2) Captain" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -3502,6 +3527,9 @@
                   </conditions>
                 </modifier>
               </modifiers>
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="c89d-5bbf-1b46-517f" name="(OF-3) Major" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -3521,6 +3549,9 @@
                   </conditions>
                 </modifier>
               </modifiers>
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -3536,6 +3567,9 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="57be-e59e-93a6-6ff7" name="Medic" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
@@ -3574,13 +3608,20 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="839d-6e81-68f2-6492" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="7b6a-611d-b490-b6cb" name="No weapon" hidden="false" collective="false" import="true" type="upgrade"/>
+                <selectionEntry id="7b6a-611d-b490-b6cb" name="No weapon" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+                  </costs>
+                </selectionEntry>
               </selectionEntries>
               <entryLinks>
                 <entryLink id="1044-154c-9b5a-8c36" name="Pistol" hidden="false" collective="false" import="true" targetId="b598-2d31-fabb-9820" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -3608,13 +3649,20 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d5c-3573-4eb2-deb2" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="b887-501d-0322-8fa7" name="No weapon" hidden="false" collective="false" import="true" type="upgrade"/>
+            <selectionEntry id="b887-501d-0322-8fa7" name="No weapon" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
           <entryLinks>
             <entryLink id="6277-6774-83f1-9c4b" name="Pistol" hidden="false" collective="false" import="true" targetId="b598-2d31-fabb-9820" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="d48f-8692-ddb8-8e26" name="Forward Observer" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
@@ -3659,6 +3707,9 @@
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -3668,8 +3719,16 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e44-b9e9-60bc-4e81" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="6b76-7cdf-275f-e7ce" name="Regular" hidden="false" collective="false" import="true" type="upgrade"/>
-            <selectionEntry id="273e-6ef3-c37b-b9d2" name="Veteran" hidden="false" collective="false" import="true" type="upgrade"/>
+            <selectionEntry id="6b76-7cdf-275f-e7ce" name="Regular" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="273e-6ef3-c37b-b9d2" name="Veteran" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="b0b4-8e3c-39b0-8195" name="Role" hidden="false" collective="false" import="true" defaultSelectionEntryId="104b-7283-d4f2-871d">
@@ -3691,6 +3750,9 @@
                   </conditions>
                 </modifier>
               </modifiers>
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="ad01-5bba-1a67-6638" name="Air Force Observer" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -3705,6 +3767,9 @@
                   </conditions>
                 </modifier>
               </modifiers>
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -3720,6 +3785,9 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
