@@ -391,6 +391,10 @@
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="d33c-3545-1565-c3eb" name="Veteran soldiers" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61fc-42cc-8623-590a" type="max"/>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d22-3191-754e-c14a" type="min"/>
+          </constraints>
           <selectionEntries>
             <selectionEntry id="d0b7-609a-bb9b-f1f1" name="Veteran NCO" hidden="false" collective="false" import="true" type="model">
               <constraints>
