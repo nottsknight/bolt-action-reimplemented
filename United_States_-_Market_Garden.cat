@@ -19,7 +19,20 @@
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fda-39ec-c1b6-79e3" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="44a6-27f8-0e6c-50f0" name="Transport vehicle or tow" hidden="false" targetId="5cba-21ae-7dae-8fc7" primary="false"/>
+        <categoryLink id="44a6-27f8-0e6c-50f0" name="Transport vehicle or tow" hidden="false" targetId="5cba-21ae-7dae-8fc7" primary="false">
+          <modifiers>
+            <modifier type="increment" field="603d-fc32-4962-7287" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e032-f8f4-f470-ca21" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3d6c-23ff-49ca-12f6" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="99f7-3a7f-2b02-82c6" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="603d-fc32-4962-7287" type="max"/>
+          </constraints>
+        </categoryLink>
         <categoryLink id="9b32-0e86-58d0-750c" name="OF-1" hidden="false" targetId="af73-813e-7e12-d4ba" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b999-c184-4c8e-d464" type="max"/>
@@ -249,6 +262,15 @@
     </entryLink>
     <entryLink id="97d3-ba7a-2189-f3f1" name="Officer" hidden="false" collective="false" import="true" targetId="f992-cc4e-2888-9cb5" type="selectionEntry"/>
     <entryLink id="58e3-67e6-052d-ec26" name="Medic" hidden="false" collective="false" import="true" targetId="57be-e59e-93a6-6ff7" type="selectionEntry"/>
+    <entryLink id="7e1e-e99c-6701-0b0f" name="Jeep" hidden="true" collective="false" import="true" targetId="cf95-535f-3f37-1d47" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a122-b63f-3154-0c58" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="7a0b-d2f3-0ec3-2f34" name="US Pathfinders" hidden="false" collective="false" import="true" type="unit">
