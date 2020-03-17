@@ -51,6 +51,11 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ccff-6cb8-f3e4-1225" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="d711-089f-1e34-ae37" name="Forward Observer" hidden="false" targetId="dc8a-eb72-6f1b-1fa0" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2553-5c2a-52da-306e" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -82,6 +87,9 @@
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="497f-9d40-d35b-4077" name="2x Pathfinder Squads" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
@@ -92,10 +100,61 @@
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="eff4-a4ae-b7a1-99f3" name="Artillery Forward Observer" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="fcf1-635a-b3ae-5230" name="Headquarters" hidden="false" targetId="99f7-3a7f-2b02-82c6" primary="true"/>
+        <categoryLink id="26cb-5c1c-b497-bbc0" name="Forward Observer" hidden="false" targetId="dc8a-eb72-6f1b-1fa0" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="9ff1-7895-50dd-ef19" name="Regular soldier" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="198e-3722-1b58-1347" type="max"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="b3a0-23db-10b3-9275" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="00ff-068a-ec76-464e">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d08-1538-088c-1107" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d6d-4347-d5af-8c4a" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="00ff-068a-ec76-464e" name="Rifle" hidden="false" collective="false" import="true" targetId="6e46-6365-c1c4-92a8" type="selectionEntry"/>
+                <entryLink id="5c46-319a-a495-49b1" name="Submachine gun (SMG)" hidden="false" collective="false" import="true" targetId="2874-5560-20c9-923a" type="selectionEntry"/>
+                <entryLink id="ea24-7d59-23d8-e68c" name="Pistol" hidden="false" collective="false" import="true" targetId="b598-2d31-fabb-9820" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="8176-344d-039b-074a" value="10.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="e51a-52e7-5cdf-95f5" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="17bb-e731-8113-2181">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f57e-aa3a-a4f7-ddd2" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea06-3f74-f948-1d5a" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="2d25-4921-6d3e-0fea" name="Rifle" hidden="false" collective="false" import="true" targetId="6e46-6365-c1c4-92a8" type="selectionEntry"/>
+            <entryLink id="17bb-e731-8113-2181" name="Submachine gun (SMG)" hidden="false" collective="false" import="true" targetId="2874-5560-20c9-923a" type="selectionEntry"/>
+            <entryLink id="1b53-039f-177f-6f37" name="Pistol" hidden="false" collective="false" import="true" targetId="b598-2d31-fabb-9820" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+      </costs>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
@@ -188,6 +247,8 @@
         </modifier>
       </modifiers>
     </entryLink>
+    <entryLink id="97d3-ba7a-2189-f3f1" name="Officer" hidden="false" collective="false" import="true" targetId="f992-cc4e-2888-9cb5" type="selectionEntry"/>
+    <entryLink id="58e3-67e6-052d-ec26" name="Medic" hidden="false" collective="false" import="true" targetId="57be-e59e-93a6-6ff7" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="7a0b-d2f3-0ec3-2f34" name="US Pathfinders" hidden="false" collective="false" import="true" type="unit">
@@ -259,6 +320,9 @@
       <entryLinks>
         <entryLink id="5ff0-591e-84e4-b384" name="Anti-tank grenades" hidden="false" collective="false" import="true" targetId="581a-f530-e19b-2ffd" type="selectionEntry"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="f197-4722-cf4a-f251" name="US Airborne Armoured Jeep" hidden="false" collective="false" import="true" type="model">
       <profiles>
