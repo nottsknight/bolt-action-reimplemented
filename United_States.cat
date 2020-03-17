@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="881b-632b-f67f-7555" name="United States" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="3aae-158e-d423-7629" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="881b-632b-f67f-7555" name="United States" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="3aae-158e-d423-7629" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="a08c-ed97-112f-2fcd" name="US Medium Machine Gun Teams" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
@@ -496,6 +496,7 @@
     </entryLink>
     <entryLink id="9470-f0ae-4e67-31b7" name="Officer" hidden="false" collective="false" import="true" targetId="f992-cc4e-2888-9cb5" type="selectionEntry"/>
     <entryLink id="a7bd-2b28-200f-840a" name="Medic" hidden="false" collective="false" import="true" targetId="57be-e59e-93a6-6ff7" type="selectionEntry"/>
+    <entryLink id="1374-a53f-530d-17c8" name="Forward Observer" hidden="false" collective="false" import="true" targetId="d48f-8692-ddb8-8e26" type="selectionEntry"/>
   </entryLinks>
   <rules>
     <rule id="994d-93ee-5dd8-0055" name="Fire and Manoeuvre" publicationId="c58a-61c4-c8c9-ff17" page="20" hidden="false">
@@ -3611,6 +3612,111 @@
           </selectionEntries>
           <entryLinks>
             <entryLink id="6277-6774-83f1-9c4b" name="Pistol" hidden="false" collective="false" import="true" targetId="b598-2d31-fabb-9820" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry id="d48f-8692-ddb8-8e26" name="Forward Observer" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="b7b1-8810-ae38-5254" name="Headquarters" hidden="false" targetId="99f7-3a7f-2b02-82c6" primary="true"/>
+        <categoryLink id="b87e-e5c5-8534-6eef" name="Forward Observer" hidden="false" targetId="dc8a-eb72-6f1b-1fa0" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="5eca-f2c7-0bd6-b51d" name="Additional soldier" hidden="false" collective="false" import="true" type="upgrade">
+          <modifierGroups>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="d48f-8692-ddb8-8e26" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6b76-7cdf-275f-e7ce" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="name" value="Regular soldier"/>
+                <modifier type="set" field="8176-344d-039b-074a" value="10.0"/>
+              </modifiers>
+            </modifierGroup>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="d48f-8692-ddb8-8e26" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="273e-6ef3-c37b-b9d2" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="name" value="Veteran soldier"/>
+                <modifier type="set" field="8176-344d-039b-074a" value="13.0"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0bac-460f-5c32-5c2f" type="max"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="3a04-1a65-af28-777c" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="3455-da9c-1246-71c7">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a17f-fbf3-1659-9ba7" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75f0-d52a-638c-9753" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="3455-da9c-1246-71c7" name="Rifle" hidden="false" collective="false" import="true" targetId="6e46-6365-c1c4-92a8" type="selectionEntry"/>
+                <entryLink id="4d5b-4763-9574-161c" name="Submachine gun (SMG)" hidden="false" collective="false" import="true" targetId="2874-5560-20c9-923a" type="selectionEntry"/>
+                <entryLink id="651e-cfae-2852-a404" name="Pistol" hidden="false" collective="false" import="true" targetId="b598-2d31-fabb-9820" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="f225-79b6-80e8-ed7d" name="Quality" hidden="false" collective="false" import="true" defaultSelectionEntryId="6b76-7cdf-275f-e7ce">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b98-0c45-75ef-68c4" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e44-b9e9-60bc-4e81" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="6b76-7cdf-275f-e7ce" name="Regular" hidden="false" collective="false" import="true" type="upgrade"/>
+            <selectionEntry id="273e-6ef3-c37b-b9d2" name="Veteran" hidden="false" collective="false" import="true" type="upgrade"/>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="b0b4-8e3c-39b0-8195" name="Role" hidden="false" collective="false" import="true" defaultSelectionEntryId="104b-7283-d4f2-871d">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="029c-ec41-4c75-5266" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c984-b661-6bc3-9443" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="104b-7283-d4f2-871d" name="Artillery Observer" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="8176-344d-039b-074a" value="100.0">
+                  <conditions>
+                    <condition field="selections" scope="d48f-8692-ddb8-8e26" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6b76-7cdf-275f-e7ce" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8176-344d-039b-074a" value="115.0">
+                  <conditions>
+                    <condition field="selections" scope="d48f-8692-ddb8-8e26" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="273e-6ef3-c37b-b9d2" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry id="ad01-5bba-1a67-6638" name="Air Force Observer" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="8176-344d-039b-074a" value="75.0">
+                  <conditions>
+                    <condition field="selections" scope="d48f-8692-ddb8-8e26" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6b76-7cdf-275f-e7ce" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8176-344d-039b-074a" value="90.0">
+                  <conditions>
+                    <condition field="selections" scope="d48f-8692-ddb8-8e26" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="273e-6ef3-c37b-b9d2" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="37f0-fa83-53f1-2455" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="0d77-a283-4a16-5068">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e2a-51dd-936b-0837" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a05-a50e-504c-fc3d" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="f282-fcb2-cf9c-25c1" name="Rifle" hidden="false" collective="false" import="true" targetId="6e46-6365-c1c4-92a8" type="selectionEntry"/>
+            <entryLink id="0d77-a283-4a16-5068" name="Submachine gun (SMG)" hidden="false" collective="false" import="true" targetId="2874-5560-20c9-923a" type="selectionEntry"/>
+            <entryLink id="c434-08d0-cc34-db6b" name="Pistol" hidden="false" collective="false" import="true" targetId="b598-2d31-fabb-9820" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
