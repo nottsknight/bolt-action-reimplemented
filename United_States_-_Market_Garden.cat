@@ -147,7 +147,15 @@
             <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a122-b63f-3154-0c58" type="instanceOf"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="818e-1828-7de9-90b5" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a122-b63f-3154-0c58" type="instanceOf"/>
+          </conditions>
+        </modifier>
       </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="818e-1828-7de9-90b5" type="min"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="1584-deb9-131b-70bc" name="Infantry squad" hidden="false" targetId="3d6c-23ff-49ca-12f6" primary="true"/>
       </categoryLinks>
@@ -243,7 +251,15 @@
             <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3713-7ce6-d333-03d2" type="instanceOf"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="41d2-612b-fd33-211e" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3713-7ce6-d333-03d2" type="instanceOf"/>
+          </conditions>
+        </modifier>
       </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41d2-612b-fd33-211e" type="min"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="2171-383d-9074-e0bd" name="Infantry squad" hidden="false" targetId="3d6c-23ff-49ca-12f6" primary="true"/>
       </categoryLinks>
@@ -296,66 +312,39 @@
             <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a122-b63f-3154-0c58" type="instanceOf"/>
           </conditions>
         </modifier>
-      </modifiers>
-    </entryLink>
-    <entryLink id="9bf3-c17a-4815-1082" name="US Pathfinders" hidden="true" collective="false" import="true" targetId="7a0b-d2f3-0ec3-2f34" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
+        <modifier type="set" field="2cb7-8d78-684b-da35" value="6.0">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a122-b63f-3154-0c58" type="instanceOf"/>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3713-7ce6-d333-03d2" type="instanceOf"/>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cff6-8e7d-ea67-0d52" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2cb7-8d78-684b-da35" type="max"/>
+      </constraints>
     </entryLink>
-    <entryLink id="1616-9db2-19b9-b172" name="Light Mortar Team (M2)" hidden="true" collective="false" import="true" targetId="998f-f04f-3d28-5659" type="selectionEntry">
+    <entryLink id="9bf3-c17a-4815-1082" name="US Pathfinders" hidden="false" collective="false" import="true" targetId="7a0b-d2f3-0ec3-2f34" type="selectionEntry">
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a122-b63f-3154-0c58" type="instanceOf"/>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3713-7ce6-d333-03d2" type="instanceOf"/>
-          </conditions>
+        <modifier type="set" field="b69a-e585-71f5-6490" value="3.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cf69-204e-b24d-64c4" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="497f-9d40-d35b-4077" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b69a-e585-71f5-6490" type="max"/>
+      </constraints>
     </entryLink>
-    <entryLink id="1389-d7c3-9ee0-256a" name="Medium Machine Gun Team" hidden="true" collective="false" import="true" targetId="8365-81cb-ba59-8382" type="selectionEntry">
+    <entryLink id="1616-9db2-19b9-b172" name="Light Mortar Team (M2)" hidden="false" collective="false" import="true" targetId="998f-f04f-3d28-5659" type="selectionEntry"/>
+    <entryLink id="1389-d7c3-9ee0-256a" name="Medium Machine Gun Team" hidden="false" collective="false" import="true" targetId="8365-81cb-ba59-8382" type="selectionEntry"/>
+    <entryLink id="0b63-6a81-2118-a958" name="Bazooka Team" hidden="false" collective="false" import="true" targetId="2365-d9d3-950b-c235" type="selectionEntry"/>
+    <entryLink id="1c69-63e1-7dca-2846" name="US Airborne Armoured Jeep" hidden="false" collective="false" import="true" targetId="f197-4722-cf4a-f251" type="selectionEntry"/>
+    <entryLink id="ce13-5acc-6062-f6c9" name="57mm Anti-tank Gun M1" hidden="false" collective="false" import="true" targetId="d9f5-2c36-a4de-4d10" type="selectionEntry">
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a122-b63f-3154-0c58" type="instanceOf"/>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3713-7ce6-d333-03d2" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </entryLink>
-    <entryLink id="0b63-6a81-2118-a958" name="Bazooka Team" hidden="true" collective="false" import="true" targetId="2365-d9d3-950b-c235" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a122-b63f-3154-0c58" type="instanceOf"/>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3713-7ce6-d333-03d2" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </entryLink>
-    <entryLink id="1c69-63e1-7dca-2846" name="US Airborne Armoured Jeep" hidden="true" collective="false" import="true" targetId="f197-4722-cf4a-f251" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a122-b63f-3154-0c58" type="instanceOf"/>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3713-7ce6-d333-03d2" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </entryLink>
-    <entryLink id="ce13-5acc-6062-f6c9" name="57mm Anti-tank Gun M1" hidden="true" collective="false" import="true" targetId="d9f5-2c36-a4de-4d10" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a122-b63f-3154-0c58" type="instanceOf"/>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3713-7ce6-d333-03d2" type="instanceOf"/>
-          </conditions>
-        </modifier>
         <modifier type="set" field="e350-fd3a-c3f6-2f41" value="2.0">
           <conditions>
             <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a122-b63f-3154-0c58" type="instanceOf"/>
@@ -367,37 +356,27 @@
         <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e350-fd3a-c3f6-2f41" type="max"/>
       </constraints>
     </entryLink>
-    <entryLink id="12da-013f-daaa-53d5" name="Light Artillery (M1A1)" hidden="true" collective="false" import="true" targetId="46fb-6b07-97a0-1aa1" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a122-b63f-3154-0c58" type="instanceOf"/>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3713-7ce6-d333-03d2" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </entryLink>
-    <entryLink id="3f59-3977-68e9-5aee" name="Medium Artillery (M2A1)" hidden="true" collective="false" import="true" targetId="adf5-7a0d-cdaf-5b5a" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a122-b63f-3154-0c58" type="instanceOf"/>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3713-7ce6-d333-03d2" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </entryLink>
+    <entryLink id="12da-013f-daaa-53d5" name="Light Artillery (M1A1)" hidden="false" collective="false" import="true" targetId="46fb-6b07-97a0-1aa1" type="selectionEntry"/>
+    <entryLink id="3f59-3977-68e9-5aee" name="Medium Artillery (M2A1)" hidden="false" collective="false" import="true" targetId="adf5-7a0d-cdaf-5b5a" type="selectionEntry"/>
     <entryLink id="97d3-ba7a-2189-f3f1" name="Officer" hidden="false" collective="false" import="true" targetId="f992-cc4e-2888-9cb5" type="selectionEntry"/>
     <entryLink id="58e3-67e6-052d-ec26" name="Medic" hidden="false" collective="false" import="true" targetId="57be-e59e-93a6-6ff7" type="selectionEntry"/>
-    <entryLink id="7e1e-e99c-6701-0b0f" name="Jeep" hidden="true" collective="false" import="true" targetId="cf95-535f-3f37-1d47" type="selectionEntry">
+    <entryLink id="7e1e-e99c-6701-0b0f" name="Jeep" hidden="false" collective="false" import="true" targetId="cf95-535f-3f37-1d47" type="selectionEntry"/>
+    <entryLink id="5cea-d271-a3a2-83fe" name="Glider Squad" hidden="true" collective="false" import="true" targetId="5356-d138-1971-27b4" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a122-b63f-3154-0c58" type="instanceOf"/>
             <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3713-7ce6-d333-03d2" type="instanceOf"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="521d-decc-fada-cafe" value="6.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9f74-6701-be3a-8184" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="521d-decc-fada-cafe" type="max"/>
+      </constraints>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
