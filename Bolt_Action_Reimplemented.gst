@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="3aae-158e-d423-7629" name="Bolt Action Reimplemented" revision="6" battleScribeVersion="2.03" authorName="Ian Knight" authorContact="ian@nottsknight.uk" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="3aae-158e-d423-7629" name="Bolt Action Reimplemented" revision="7" battleScribeVersion="2.03" authorName="Ian Knight" authorContact="ian@nottsknight.uk" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="ec7d-71bb-0022-d2a4" name="Bolt Action Second Edition"/>
     <publication id="92e9-a650-d92d-aea1" name="Armies of Great Britain"/>
@@ -8,6 +8,7 @@
     <publication id="b31e-eb64-81f7-e19f" name="Armies of the Soviet Union"/>
     <publication id="5b13-0df8-0b6a-dd7f" name="Armies of Imperial Japan"/>
     <publication id="c58a-61c4-c8c9-ff17" name="Armies of the United States"/>
+    <publication id="9a69-da4c-3ca0-1b67" name="Tank War"/>
   </publications>
   <costTypes>
     <costType id="8176-344d-039b-074a" name="pts" defaultCostLimit="-1.0"/>
@@ -164,7 +165,7 @@
     </forceEntry>
     <forceEntry id="fb25-b02f-7c68-6cce" name="1939-45 -- Armoured Platoon" hidden="false">
       <rules>
-        <rule id="008b-94fb-1aad-bf65" name="1939-45 -- Armoured Platoon" hidden="false">
+        <rule id="008b-94fb-1aad-bf65" name="1939-45 -- Armoured Platoon" publicationId="9a69-da4c-3ca0-1b67" page="11" hidden="false">
           <description>This force must include enough transport vehicles to transport all models in infantry and artillery units attached to the platoon, up to a maximum of 1 vehicle per infantry and artillery unit.	</description>
         </rule>
       </rules>
@@ -635,24 +636,67 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="9d4e-de79-9311-c725" name="Armoured Platoon HQ" hidden="true" collective="false" import="true" type="upgrade">
-      <modifierGroups>
-        <modifierGroup>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
           <conditions>
             <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb25-b02f-7c68-6cce" type="instanceOf"/>
           </conditions>
-          <modifiers>
-            <modifier type="set" field="hidden" value="false"/>
-            <modifier type="set" field="e141-5241-bf2d-32aa" value="1.0"/>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2b5-8a52-635c-a0d5" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e65-8b4e-16a6-61ce" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="8317-ead9-7b16-b43f" name="Command Vehicle" hidden="false" targetId="4eb4-6449-6a4f-05fa" type="rule"/>
+        <infoLink id="8317-ead9-7b16-b43f" name="Command Vehicle" hidden="false" targetId="4eb4-6449-6a4f-05fa" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="353a-23bf-37cc-29a7" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="353a-23bf-37cc-29a7" name="Command level" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87c6-a3a0-d983-1ef2" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="cd9b-4f63-21c4-6ed9" name="(OF-1) Armoured Platoon Commander" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="4bd8-1c3b-dc84-6284" name="Command Vehicle (Platoon Commander)" publicationId="9a69-da4c-3ca0-1b67" page="13" hidden="false">
+                  <description>Vehicles from this model&apos;s platoon gain +2 morale while within 12&quot;.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="5.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4576-a01a-55dc-7478" name="(OF-2) Armoured Company Commander" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="f1f8-098c-dc2e-0a61" name="Command Vehicle (Company Commander)" publicationId="9a69-da4c-3ca0-1b67" page="13" hidden="false">
+                  <description>Vehicles from this model&apos;s platoon gain +3 morale while within 12&quot;.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="15.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3e37-fa1d-357b-b3fb" name="(OF-3) Armoured Battalion Commander" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="4598-240f-7572-c5a9" name="Command Vehicle (Battalion Commander)" publicationId="9a69-da4c-3ca0-1b67" page="13" hidden="false">
+                  <description>Vehicles from this model&apos;s platoon gain +4 morale while within 12&quot;.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="25.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="8176-344d-039b-074a" value="25.0"/>
       </costs>
