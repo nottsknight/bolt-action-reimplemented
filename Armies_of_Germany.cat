@@ -8979,6 +8979,9 @@
               </constraints>
             </entryLink>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -9107,6 +9110,9 @@
               </constraints>
             </entryLink>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -9129,6 +9135,383 @@
             <selectionEntry id="fa11-ad4c-decb-2712" name="Veteran" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
                 <cost name="pts" typeId="8176-344d-039b-074a" value="138.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b04e-5ecc-8c5c-a722" name="Sd.Kfz 4 Half-Track" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="c3c1-dfb7-bdb6-237e" name="Sd.Kfz 4 Half-Track" publicationId="7be3-8596-70c9-3955" page="75" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
+          <characteristics>
+            <characteristic name="Mobility" typeId="4f3d-8de7-7a3c-86f2">Half-track</characteristic>
+            <characteristic name="Armour" typeId="800c-f0f8-35cd-bf26">Armoured carrier (7+)</characteristic>
+            <characteristic name="Special Rules" typeId="5d9c-8a45-401f-0d72">Open-topped, Transport (12), Tow (light or medium  howitzer; light, medium, or heavy AT gun; light or heavy AA gun)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="358a-c6ce-87c4-544a" name="Open-Topped" hidden="false" targetId="aabc-b1f8-3028-9ca3" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="65a1-332b-234a-6082" name="Transport vehicle or tow" hidden="false" targetId="5cba-21ae-7dae-8fc7" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="0330-d794-be58-9bda" name="Quality" hidden="false" collective="false" import="true" defaultSelectionEntryId="7dfb-ae2d-ac0c-7fdb">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44b2-d792-bdfc-0308" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0efb-ebf9-0f7d-c45d" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="18c3-6b8c-8ee8-8161" name="Inexperienced" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="71.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7dfb-ae2d-ac0c-7fdb" name="Regular" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="89.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7b3b-750a-8836-de64" name="Veteran" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="107.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7c0a-61e3-5e0b-6673" name="Schwimmwagen" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="3894-b7f7-fe6b-0a4f" name="Schwimmwagen" publicationId="7be3-8596-70c9-3955" page="76" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
+          <modifiers>
+            <modifier type="set" field="5d9c-8a45-401f-0d72" value="-">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="eaf7-2eb1-c397-a971" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Mobility" typeId="4f3d-8de7-7a3c-86f2">Wheeled</characteristic>
+            <characteristic name="Armour" typeId="800c-f0f8-35cd-bf26">Soft-skin (6+)</characteristic>
+            <characteristic name="Special Rules" typeId="5d9c-8a45-401f-0d72">Transport (3)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="005c-57ee-2ae3-83c0" name="Transport vehicle or tow" hidden="false" targetId="5cba-21ae-7dae-8fc7" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="eaf7-2eb1-c397-a971" name="Pintle-mounted MMG (front arc)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43ae-887d-1249-3c36" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="a27c-1994-b2ba-d9e3" name="Medium machine gun (MMG)" hidden="false" collective="false" import="true" targetId="e03b-40d5-8524-f200" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d940-c351-ab11-cf1c" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79af-9fc4-d52c-e3f7" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="8176-344d-039b-074a" value="15.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d223-ba9f-dbd3-ed69" name="Quality" hidden="false" collective="false" import="true" defaultSelectionEntryId="3537-e737-6030-3535">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="472a-d1cd-46c1-b515" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff75-42ae-59da-399b" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="780c-f710-b9ba-09b2" name="Inexperienced" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="21.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3537-e737-6030-3535" name="Regular" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="26.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e575-9a2d-146e-de01" name="Veteran" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="31.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fbed-a749-509f-936e" name="Raupenschlepper Ost" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="54be-2935-38df-bf84" name="Raupenschlepper Ost" publicationId="7be3-8596-70c9-3955" page="76" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
+          <characteristics>
+            <characteristic name="Mobility" typeId="4f3d-8de7-7a3c-86f2">Tracked</characteristic>
+            <characteristic name="Armour" typeId="800c-f0f8-35cd-bf26">Armoured carrier (7+)</characteristic>
+            <characteristic name="Special Rules" typeId="5d9c-8a45-401f-0d72">Transport (12), Tow (light or medium howitzer; light, medium, or heavy AT gun; light or heavy AA gun)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="1582-9f86-1fec-22dd" name="Transport vehicle or tow" hidden="false" targetId="5cba-21ae-7dae-8fc7" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="52f5-43ef-fcf6-8909" name="Quality" hidden="false" collective="false" import="true" defaultSelectionEntryId="4017-ac44-3b66-6162">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3362-d7bf-68ad-b007" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="253d-c047-12ff-e4aa" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="6d3b-1c83-ba87-1bf8" name="Inexperienced" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="31.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4017-ac44-3b66-6162" name="Regular" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="39.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3d08-9259-d9f4-7419" name="Veteran" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="47.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1c0c-59b1-c001-8ffa" name="Land-Wasser Schlepper" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="2b5a-08d9-869e-4167" name="Land-Wasser Schlepper" publicationId="7be3-8596-70c9-3955" page="76" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
+          <characteristics>
+            <characteristic name="Mobility" typeId="4f3d-8de7-7a3c-86f2">Tracked</characteristic>
+            <characteristic name="Armour" typeId="800c-f0f8-35cd-bf26">Soft-skin (6+)</characteristic>
+            <characteristic name="Special Rules" typeId="5d9c-8a45-401f-0d72">Amphibious, Transport (20), Tow (any)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="9566-413f-4d85-369f" name="Amphibious" hidden="false" targetId="e459-190a-6905-4793" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="95cc-b7ff-8693-bd5b" name="Transport vehicle or tow" hidden="false" targetId="5cba-21ae-7dae-8fc7" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="1ece-8ce5-0e9c-0be5" name="Quality" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69e4-8b5f-550a-da18" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a14-b93a-5225-ac40" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="6321-66d7-be69-89de" name="Inexperienced" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="48.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="693e-5405-4b49-ecd9" name="Regular" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="60.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c181-7d2d-93d6-221e" name="Unic P107 Half-Track" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="13d9-32fe-193f-6952" name="Unic P107 Half-Track" publicationId="7be3-8596-70c9-3955" page="77" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
+          <characteristics>
+            <characteristic name="Mobility" typeId="4f3d-8de7-7a3c-86f2">Half-track</characteristic>
+            <characteristic name="Armour" typeId="800c-f0f8-35cd-bf26">Armoured carrier (7+)</characteristic>
+            <characteristic name="Special Rules" typeId="5d9c-8a45-401f-0d72">Open-topped, Transport (12), Tow (light or medium howitzer; light, medium, heavy AT gun; light or heavy AA gun)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="232d-bec4-d171-4163" name="Open-Topped" hidden="false" targetId="aabc-b1f8-3028-9ca3" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="2c5c-ca0d-8f82-8a36" name="Transport vehicle or tow" hidden="false" targetId="5cba-21ae-7dae-8fc7" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="e7a8-1463-ff7f-6e4c" name="Pintle-mounted MMG (front arc)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="364b-e5a4-ec74-8666" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73ee-f97e-312a-6f6e" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="94ea-e769-86c3-4e3f" name="Medium machine gun (MMG)" hidden="false" collective="false" import="true" targetId="e03b-40d5-8524-f200" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9245-e81e-96af-90aa" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d1c-b044-1302-d9b8" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry id="a5ab-3527-f132-b0a1" name="Pintle-mounted MMG (left arc)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b6a-3290-08f3-fe17" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="66e7-814e-a3ed-69c5" name="Medium machine gun (MMG)" hidden="false" collective="false" import="true" targetId="e03b-40d5-8524-f200" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="123c-af79-1113-cd04" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bece-5790-138e-a22e" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="8176-344d-039b-074a" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="cbb4-947a-f7c1-83e1" name="Pintle-mounted MMG (right arc)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79c8-1968-237c-61be" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="db27-5b37-827d-6966" name="Medium machine gun (MMG)" hidden="false" collective="false" import="true" targetId="e03b-40d5-8524-f200" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e66a-d4ca-6a7f-f4d4" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9fe5-28d4-696e-d259" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="8176-344d-039b-074a" value="15.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="efe8-ec58-9a89-b986" name="Quality" hidden="false" collective="false" import="true" defaultSelectionEntryId="dc75-1375-89b8-625d">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4049-0a61-4a89-a742" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1577-7e27-d13b-2cba" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="1274-204f-9fe7-284b" name="Inexperienced" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="71.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="dc75-1375-89b8-625d" name="Regular" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="89.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6e3a-7494-9968-cacb" name="Veteran" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="107.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2aa6-79e1-098f-67e6" name="Artillerie Schlepper VA 601(b)" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="4418-8260-94ef-295f" name="Artillerie Schlepper VA 601(b)" publicationId="7be3-8596-70c9-3955" page="77" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
+          <characteristics>
+            <characteristic name="Mobility" typeId="4f3d-8de7-7a3c-86f2">Tracked</characteristic>
+            <characteristic name="Armour" typeId="800c-f0f8-35cd-bf26">Armoured carrier (7+)</characteristic>
+            <characteristic name="Special Rules" typeId="5d9c-8a45-401f-0d72">Open-topped, Transport (6), Tow (light or medium howitzer; light, medium, or heavy AT gun; light or heavy AA gun)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="7907-5ae7-eb1c-df71" name="Open-Topped" hidden="false" targetId="aabc-b1f8-3028-9ca3" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="2632-1bcd-c39c-b438" name="Transport vehicle or tow" hidden="false" targetId="5cba-21ae-7dae-8fc7" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="274b-aa5e-4acd-3078" name="Quality" hidden="false" collective="false" import="true" defaultSelectionEntryId="5cfc-349f-e9b6-cc2a">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a28-8bd0-bf31-9bca" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f27-48cd-b57e-95c8" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="1e62-0a47-9334-907b" name="Inexperienced" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="46.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5cfc-349f-e9b6-cc2a" name="Regular" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="57.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7b50-1a14-5866-d56e" name="Veteran" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="68.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d54d-bc44-5963-0538" name="Horse-drawn Limber" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="1e87-4d24-d505-6b4a" name="Horse-drawn Limber" publicationId="7be3-8596-70c9-3955" page="78" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
+          <characteristics>
+            <characteristic name="Mobility" typeId="4f3d-8de7-7a3c-86f2">Wheeled</characteristic>
+            <characteristic name="Armour" typeId="800c-f0f8-35cd-bf26">Literally soft-skinned (3+)</characteristic>
+            <characteristic name="Special Rules" typeId="5d9c-8a45-401f-0d72">Tow (any), Slow (only when towing)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="86a8-ba8c-dfda-a15c" name="Slow" hidden="false" targetId="f588-9b83-2356-ae6c" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="f614-f575-3869-f30b" name="Transport vehicle or tow" hidden="false" targetId="5cba-21ae-7dae-8fc7" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="dc4c-b4c6-2925-e37d" name="Quality" hidden="false" collective="false" import="true" defaultSelectionEntryId="d0d0-99b3-6235-913f">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75cc-4cae-f48c-980b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d79-877f-653f-fe11" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="1142-b375-4c01-9338" name="Inexperienced" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="8.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d0d0-99b3-6235-913f" name="Regular" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5d46-bd01-bc04-e604" name="Veteran" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="12.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
