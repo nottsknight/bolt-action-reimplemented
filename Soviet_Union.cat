@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3e54-ad98-8b62-13c1" name="Soviet Union" revision="6" battleScribeVersion="2.03" authorName="Ian Knight" authorContact="ian@nottsknight.uk" library="false" gameSystemId="3aae-158e-d423-7629" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3e54-ad98-8b62-13c1" name="Soviet Union" revision="6" battleScribeVersion="2.03" authorName="Ian Knight" authorContact="ian@nottsknight.uk" library="false" gameSystemId="3aae-158e-d423-7629" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="8977-f53f-913c-e671" name="Commissar" hidden="false"/>
   </categoryEntries>
@@ -2180,7 +2180,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95bf-7d30-7b23-736c" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="52bc-d882-07a5-6b01" name="(OF-1a) Junior Lieutenant" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="52bc-d882-07a5-6b01" name="(OF-1a) Mladshiy leytenant" hidden="false" collective="false" import="true" type="model">
               <modifiers>
                 <modifier type="set" field="8176-344d-039b-074a" value="50.0">
                   <conditions>
@@ -2201,7 +2201,7 @@
               <infoLinks>
                 <infoLink id="3197-dc25-3e44-e7a1" name="OF-1a" hidden="false" targetId="65e1-bbf5-d35b-fedc" type="profile">
                   <modifiers>
-                    <modifier type="set" field="name" value="Junior Lieutenant"/>
+                    <modifier type="set" field="name" value="Mladshiy leytenant"/>
                   </modifiers>
                 </infoLink>
               </infoLinks>
@@ -2209,7 +2209,7 @@
                 <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="b3ff-72e9-f26b-551e" name="(OF-1b) Senior Lieutenant" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="b3ff-72e9-f26b-551e" name="(OF-1b) Starshiy leytenant" hidden="false" collective="false" import="true" type="model">
               <modifiers>
                 <modifier type="set" field="8176-344d-039b-074a" value="75.0">
                   <conditions>
@@ -2230,7 +2230,7 @@
               <infoLinks>
                 <infoLink id="550f-f97e-6e18-850b" name="OF-1b" hidden="false" targetId="4275-d07f-4e7e-1d16" type="profile">
                   <modifiers>
-                    <modifier type="set" field="name" value="Junior Lieutenant"/>
+                    <modifier type="set" field="name" value="Starshiy leytenant"/>
                   </modifiers>
                 </infoLink>
               </infoLinks>
@@ -2238,7 +2238,7 @@
                 <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="1fee-83a1-2462-151e" name="(OF-2) Captain" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="1fee-83a1-2462-151e" name="(OF-2) Kapitan" hidden="false" collective="false" import="true" type="model">
               <modifiers>
                 <modifier type="set" field="8176-344d-039b-074a" value="110.0">
                   <conditions>
@@ -2259,7 +2259,7 @@
               <infoLinks>
                 <infoLink id="7885-783f-3b66-b18b" name="OF-2" hidden="false" targetId="7784-ad13-c6c9-09f6" type="profile">
                   <modifiers>
-                    <modifier type="set" field="name" value="Junior Lieutenant"/>
+                    <modifier type="set" field="name" value="Kapitan"/>
                   </modifiers>
                 </infoLink>
               </infoLinks>
@@ -2267,7 +2267,7 @@
                 <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="93d7-ffde-0b1f-1e2b" name="(OF-3) Major" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="93d7-ffde-0b1f-1e2b" name="(OF-3) Mayor" hidden="false" collective="false" import="true" type="model">
               <modifiers>
                 <modifier type="set" field="8176-344d-039b-074a" value="150.0">
                   <conditions>
@@ -2288,7 +2288,7 @@
               <infoLinks>
                 <infoLink id="adbe-988c-7aa2-eda5" name="OF-3" hidden="false" targetId="0e96-4642-6a6c-4c7a" type="profile">
                   <modifiers>
-                    <modifier type="set" field="name" value="Junior Lieutenant"/>
+                    <modifier type="set" field="name" value="Mayor"/>
                   </modifiers>
                 </infoLink>
               </infoLinks>
@@ -9782,6 +9782,9 @@
               </constraints>
             </entryLink>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="df84-ea3a-7493-c00f" name="Turret-mounted gyro-stabilised light AT gun w/ co-axial MMG" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -9805,6 +9808,9 @@
               </constraints>
             </entryLink>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="a47c-ae1f-86f6-b43b" name="Cupola turret-mounted MMG" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -9819,6 +9825,9 @@
               </constraints>
             </entryLink>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -10271,6 +10280,9 @@
               <infoLinks>
                 <infoLink id="7bb9-bc93-db9f-bffe" name="Open-Topped" hidden="false" targetId="aabc-b1f8-3028-9ca3" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="d919-7422-d559-be31" name="Recce variant" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
@@ -10286,6 +10298,9 @@
                 <infoLink id="6cd1-6fef-715d-ebc8" name="Open-Topped" hidden="false" targetId="aabc-b1f8-3028-9ca3" type="rule"/>
                 <infoLink id="eb65-a73a-ce7f-8be0" name="Recce" hidden="false" targetId="211d-a0f1-3ec7-87e3" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -10301,6 +10316,9 @@
           </constraints>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="80d6-f8fd-3b30-b7fc" name="Lend-Lease M17 AA Half-Track" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -10333,6 +10351,9 @@
               </constraints>
             </entryLink>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="8fd4-ad58-1fdc-3a32" name="Pintle-mounted MMG (rear arc)" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -10346,6 +10367,9 @@
               </constraints>
             </entryLink>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
