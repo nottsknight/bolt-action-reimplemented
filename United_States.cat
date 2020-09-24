@@ -554,6 +554,34 @@
         </modifier>
       </modifiers>
     </entryLink>
+    <entryLink id="a45b-0ebc-a381-7cec" name="M3 75mm (T30) Howitzer Motor Carriage" hidden="true" collective="false" import="true" targetId="f062-4cba-d8fd-7f10" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c435-2918-b171-daad" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb25-b02f-7c68-6cce" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="afe7-ef29-6391-ba3d" name="M3 105mm Howitzer Motor Carriage" hidden="true" collective="false" import="true" targetId="2e7a-ce07-1f68-96fd" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c435-2918-b171-daad" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb25-b02f-7c68-6cce" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <rules>
     <rule id="994d-93ee-5dd8-0055" name="Fire and Manoeuvre" publicationId="c58a-61c4-c8c9-ff17" page="20" hidden="false">
@@ -4155,6 +4183,134 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e36-15d0-5488-d11e" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a29-771f-35ba-b75e" type="min"/>
           </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="f062-4cba-d8fd-7f10" name="M3 75mm (T30) Howitzer Motor Carriage" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="6cb3-ff01-2516-9820" name="M3 75mm (T30) Howitzer Motor Carriage" publicationId="c58a-61c4-c8c9-ff17" page="45" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
+          <characteristics>
+            <characteristic name="Mobility" typeId="4f3d-8de7-7a3c-86f2">Tracked</characteristic>
+            <characteristic name="Armour" typeId="800c-f0f8-35cd-bf26">Armoured carrier (7+)</characteristic>
+            <characteristic name="Special Rules" typeId="5d9c-8a45-401f-0d72">Open-topped</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="e1c7-aed1-4575-0367" name="Open-Topped" hidden="false" targetId="aabc-b1f8-3028-9ca3" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="b02c-6fc6-c964-1e7c" name="Tank, Tank Destroyer, Anti-aircraft vehicle or Self-propelled artillery" hidden="false" targetId="a405-25ce-0c16-362a" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="8737-3d9d-635a-5068" name="Quality" hidden="false" collective="false" import="true" defaultSelectionEntryId="1c80-27cb-90ae-49c4">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93de-0e09-a86e-31d1" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90a8-651a-8fd6-eb02" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="d737-a49d-7ad3-23ad" name="Inexperienced" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="80.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1c80-27cb-90ae-49c4" name="Regular" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="100.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c96d-37e7-cd30-478c" name="Veteran" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="120.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="71b6-f8e6-5035-7187" name="Light howitzer" hidden="false" collective="false" import="true" targetId="0bdd-bb06-2c30-3eff" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="name" value="Hull-mounted forward facing light howitzer"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e77-8726-93be-f33b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1204-73e9-0d18-6936" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="cae3-17a3-cf93-2583" name="Medium machine gun (MMG)" hidden="false" collective="false" import="true" targetId="e03b-40d5-8524-f200" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="name" value="Pintle-mounted MMG (rear arc)"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ad8-44ef-a64b-5efa" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="8176-344d-039b-074a" value="15.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="2e7a-ce07-1f68-96fd" name="M3 105mm Howitzer Motor Carriage" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="bb83-ea8c-d5c1-e6ca" name="M3 105mm Howitzer Motor Carriage" publicationId="c58a-61c4-c8c9-ff17" page="45" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
+          <characteristics>
+            <characteristic name="Mobility" typeId="4f3d-8de7-7a3c-86f2">Tracked</characteristic>
+            <characteristic name="Armour" typeId="800c-f0f8-35cd-bf26">Armoured carrier (7+)</characteristic>
+            <characteristic name="Special Rules" typeId="5d9c-8a45-401f-0d72">Open-topped</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="07e1-c34c-f3aa-db63" name="Open-Topped" hidden="false" targetId="aabc-b1f8-3028-9ca3" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="ba04-7f89-166b-d77b" name="Tank, Tank Destroyer, Anti-aircraft vehicle or Self-propelled artillery" hidden="false" targetId="a405-25ce-0c16-362a" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="56a2-0fdb-8cda-a894" name="Quality" hidden="false" collective="false" import="true" defaultSelectionEntryId="73e2-751f-b5f5-11a1">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c091-373f-692e-bfc0" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1b7-a068-d39b-1075" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="fe47-36bb-fec3-6791" name="Inexperienced" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="96.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="73e2-751f-b5f5-11a1" name="Regular" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="120.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="33bc-5776-2e1b-5634" name="Veteran" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="144.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="27a0-92c0-f3cc-1c61" name="Medium howitzer" hidden="false" collective="false" import="true" targetId="3fd2-9c77-92d8-4345" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="name" value="Hull-mounted forward facing medium howitzer"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e52-ab72-1f02-958b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81b8-35d2-6e39-0c40" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="19da-c987-52e2-90ef" name="Medium machine gun (MMG)" hidden="false" collective="false" import="true" targetId="e03b-40d5-8524-f200" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="name" value="Pintle-mounted MMG (rear arc)"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b029-0439-0712-bab6" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="8176-344d-039b-074a" value="15.0"/>
+          </costs>
         </entryLink>
       </entryLinks>
     </selectionEntry>
