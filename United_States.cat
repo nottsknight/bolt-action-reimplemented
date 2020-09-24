@@ -4124,7 +4124,7 @@
         <categoryLink id="6bd9-29af-1583-674b" name="Tank, Tank Destroyer, Anti-aircraft vehicle or Self-propelled artillery" hidden="false" targetId="a405-25ce-0c16-362a" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="268f-fef6-1f95-54ca" name="Quality" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="268f-fef6-1f95-54ca" name="Quality" hidden="false" collective="false" import="true" defaultSelectionEntryId="dd82-afcf-ff3b-655b">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da2d-e51e-33f7-4263" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57cd-a82c-94c4-0df9" type="min"/>
@@ -4192,7 +4192,7 @@
         <categoryLink id="c9d3-145d-6bd2-a2bf" name="Tank, Tank Destroyer, Anti-aircraft vehicle or Self-propelled artillery" hidden="false" targetId="a405-25ce-0c16-362a" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="534b-752e-510c-651c" name="Quality" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="534b-752e-510c-651c" name="Quality" hidden="false" collective="false" import="true" defaultSelectionEntryId="623c-1dbf-f823-330c">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5f4-5633-08d1-0833" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b407-bfd0-6826-c596" type="min"/>
@@ -4435,7 +4435,7 @@
         <categoryLink id="ab58-00ae-4eff-35c9" name="Tank, Tank Destroyer, Anti-aircraft vehicle or Self-propelled artillery" hidden="false" targetId="a405-25ce-0c16-362a" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="e08f-d27a-0534-2706" name="Quality" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="e08f-d27a-0534-2706" name="Quality" hidden="false" collective="false" import="true" defaultSelectionEntryId="a481-6bbf-0876-9391">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4ca-38be-3f12-64c9" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6490-e610-80e3-882b" type="min"/>
