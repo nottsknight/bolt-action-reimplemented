@@ -3043,7 +3043,7 @@
       <profiles>
         <profile id="3585-b576-7ea0-10c8" name="M3 75mm (T12) Gun Motor Carriage" publicationId="c58a-61c4-c8c9-ff17" page="42" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
           <characteristics>
-            <characteristic name="Mobility" typeId="4f3d-8de7-7a3c-86f2">Tracked</characteristic>
+            <characteristic name="Mobility" typeId="4f3d-8de7-7a3c-86f2">Wheeled</characteristic>
             <characteristic name="Armour" typeId="800c-f0f8-35cd-bf26">Armoured carrier (7+)</characteristic>
             <characteristic name="Special Rules" typeId="5d9c-8a45-401f-0d72">Open-topped</characteristic>
           </characteristics>
@@ -4159,7 +4159,7 @@
       <profiles>
         <profile id="df08-6523-67c2-d5b5" name="M12 Gun Motor Carriage" publicationId="c58a-61c4-c8c9-ff17" page="44" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
           <characteristics>
-            <characteristic name="Mobility" typeId="4f3d-8de7-7a3c-86f2">Tracked</characteristic>
+            <characteristic name="Mobility" typeId="4f3d-8de7-7a3c-86f2">Wheeled	</characteristic>
             <characteristic name="Armour" typeId="800c-f0f8-35cd-bf26">Light tank (8+)</characteristic>
             <characteristic name="Special Rules" typeId="5d9c-8a45-401f-0d72">Open-topped</characteristic>
           </characteristics>
@@ -4286,7 +4286,7 @@
       <profiles>
         <profile id="6cb3-ff01-2516-9820" name="M3 75mm (T30) Howitzer Motor Carriage" publicationId="c58a-61c4-c8c9-ff17" page="45" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
           <characteristics>
-            <characteristic name="Mobility" typeId="4f3d-8de7-7a3c-86f2">Tracked</characteristic>
+            <characteristic name="Mobility" typeId="4f3d-8de7-7a3c-86f2">Wheeled</characteristic>
             <characteristic name="Armour" typeId="800c-f0f8-35cd-bf26">Armoured carrier (7+)</characteristic>
             <characteristic name="Special Rules" typeId="5d9c-8a45-401f-0d72">Open-topped</characteristic>
           </characteristics>
@@ -4353,7 +4353,7 @@
       <profiles>
         <profile id="bb83-ea8c-d5c1-e6ca" name="M3 105mm Howitzer Motor Carriage" publicationId="c58a-61c4-c8c9-ff17" page="45" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
           <characteristics>
-            <characteristic name="Mobility" typeId="4f3d-8de7-7a3c-86f2">Tracked</characteristic>
+            <characteristic name="Mobility" typeId="4f3d-8de7-7a3c-86f2">Wheeled	</characteristic>
             <characteristic name="Armour" typeId="800c-f0f8-35cd-bf26">Armoured carrier (7+)</characteristic>
             <characteristic name="Special Rules" typeId="5d9c-8a45-401f-0d72">Open-topped</characteristic>
           </characteristics>
