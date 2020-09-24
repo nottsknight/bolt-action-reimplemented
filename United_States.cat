@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="881b-632b-f67f-7555" name="United States" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="3aae-158e-d423-7629" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="881b-632b-f67f-7555" name="United States" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="3aae-158e-d423-7629" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="a08c-ed97-112f-2fcd" name="US Medium Machine Gun Teams" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
@@ -498,6 +498,62 @@
     <entryLink id="a7bd-2b28-200f-840a" name="Medic" hidden="false" collective="false" import="true" targetId="57be-e59e-93a6-6ff7" type="selectionEntry"/>
     <entryLink id="1374-a53f-530d-17c8" name="Forward Observer" hidden="false" collective="false" import="true" targetId="d48f-8692-ddb8-8e26" type="selectionEntry"/>
     <entryLink id="c2e2-4129-5d16-df91" name="Jeep" hidden="false" collective="false" import="true" targetId="cf95-535f-3f37-1d47" type="selectionEntry"/>
+    <entryLink id="502f-7590-0c2e-0fe2" name="M8 Scott" hidden="true" collective="false" import="true" targetId="cb05-970d-2c5e-09e6" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c435-2918-b171-daad" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb25-b02f-7c68-6cce" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="6fe6-7dad-72e7-3cfa" name="M7 Priest" hidden="true" collective="false" import="true" targetId="51e9-4146-8144-18c5" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c435-2918-b171-daad" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb25-b02f-7c68-6cce" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="a735-bcbf-ea5f-e114" name="M12 Gun Motor Carriage" hidden="true" collective="false" import="true" targetId="311b-6184-1b37-7f47" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c435-2918-b171-daad" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb25-b02f-7c68-6cce" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="2a53-8e08-9d9a-19d7" name="M40 Gun Motor Carriage" hidden="true" collective="false" import="true" targetId="7a1a-3e25-636f-79fa" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c435-2918-b171-daad" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb25-b02f-7c68-6cce" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <rules>
     <rule id="994d-93ee-5dd8-0055" name="Fire and Manoeuvre" publicationId="c58a-61c4-c8c9-ff17" page="20" hidden="false">
@@ -3858,6 +3914,249 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="8176-344d-039b-074a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cb05-970d-2c5e-09e6" name="M8 Scott" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="1209-1fc2-79f5-7ce1" name="M8 Scott" publicationId="c58a-61c4-c8c9-ff17" page="44" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
+          <characteristics>
+            <characteristic name="Mobility" typeId="4f3d-8de7-7a3c-86f2">Tracked</characteristic>
+            <characteristic name="Armour" typeId="800c-f0f8-35cd-bf26">Light tank (8+)</characteristic>
+            <characteristic name="Special Rules" typeId="5d9c-8a45-401f-0d72">Open-topped</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="2acf-e4ce-6b25-6426" name="Open-Topped" hidden="false" targetId="aabc-b1f8-3028-9ca3" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="c49b-6134-2dfb-34e2" name="Tank, Tank Destroyer, Anti-aircraft vehicle or Self-propelled artillery" hidden="false" targetId="a405-25ce-0c16-362a" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="2f90-36c3-0291-bbb4" name="Quality" hidden="false" collective="false" import="true" defaultSelectionEntryId="0d22-4557-81a6-f5f1">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b894-7f20-0e5e-8c42" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc28-bd13-da31-a16c" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="0c00-8d22-cad6-625c" name="Inexperienced" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="112.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0d22-4557-81a6-f5f1" name="Regular" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="140.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="98b0-24b6-d790-e824" name="Light howitzer" hidden="false" collective="false" import="true" targetId="0bdd-bb06-2c30-3eff" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="name" value="Light howitzer (open-topped turret)"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f66d-4623-173f-860e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d5b-c411-639f-c6c8" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="5a4a-1c11-4467-fff1" name="Heavy machine gun (HMG)" hidden="false" collective="false" import="true" targetId="97d3-af62-cb17-9cb8" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="name" value="Pintle-mounted HMG"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4091-1601-f166-9b94" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb3a-00b9-d8a9-f764" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="51e9-4146-8144-18c5" name="M7 Priest" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="d319-d413-80b2-1562" name="M7 Priest" publicationId="c58a-61c4-c8c9-ff17" page="44" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
+          <characteristics>
+            <characteristic name="Mobility" typeId="4f3d-8de7-7a3c-86f2">Tracked</characteristic>
+            <characteristic name="Armour" typeId="800c-f0f8-35cd-bf26">Light tank (8+)</characteristic>
+            <characteristic name="Special Rules" typeId="5d9c-8a45-401f-0d72">Open-topped</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="01aa-7892-9956-1777" name="Open-Topped" hidden="false" targetId="aabc-b1f8-3028-9ca3" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="2d4a-f230-b9fc-430f" name="Tank, Tank Destroyer, Anti-aircraft vehicle or Self-propelled artillery" hidden="false" targetId="a405-25ce-0c16-362a" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9e3b-b406-a27f-3963" name="Quality" hidden="false" collective="false" import="true" defaultSelectionEntryId="ee6c-f680-73da-6359">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c97-d0d2-aa84-650d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c58-0827-6cf1-7d80" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="ffc8-e49e-6dd6-c93a" name="Inexperienced" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="128.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ee6c-f680-73da-6359" name="Regular" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="160.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4a97-5f2d-ba44-3579" name="Veteran" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="192.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="b2dd-96b5-6a13-6ca2" name="Medium howitzer" hidden="false" collective="false" import="true" targetId="3fd2-9c77-92d8-4345" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="name" value="Forward-facing casement-mounted medium howitzer"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bc8-cae9-0211-57eb" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c8f-65de-7c03-d037" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="3635-2246-6a60-523a" name="Heavy machine gun (HMG)" hidden="false" collective="false" import="true" targetId="97d3-af62-cb17-9cb8" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="name" value="Pintle-mounted HMG"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f281-8b62-a3a1-e565" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="feb9-2141-fdff-3885" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="311b-6184-1b37-7f47" name="M12 Gun Motor Carriage" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="df08-6523-67c2-d5b5" name="M12 Gun Motor Carriage" publicationId="c58a-61c4-c8c9-ff17" page="44" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
+          <characteristics>
+            <characteristic name="Mobility" typeId="4f3d-8de7-7a3c-86f2">Tracked</characteristic>
+            <characteristic name="Armour" typeId="800c-f0f8-35cd-bf26">Light tank (8+)</characteristic>
+            <characteristic name="Special Rules" typeId="5d9c-8a45-401f-0d72">Open-topped</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="2b7b-5aa9-a5c7-e671" name="Open-Topped" hidden="false" targetId="aabc-b1f8-3028-9ca3" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="6bd9-29af-1583-674b" name="Tank, Tank Destroyer, Anti-aircraft vehicle or Self-propelled artillery" hidden="false" targetId="a405-25ce-0c16-362a" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="268f-fef6-1f95-54ca" name="Quality" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da2d-e51e-33f7-4263" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57cd-a82c-94c4-0df9" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="505e-56d3-a3ea-1472" name="Inexperienced" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="140.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="dd82-afcf-ff3b-655b" name="Regular" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="175.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8234-bdef-0983-1e25" name="Veteran" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="210.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="d626-d87c-fa82-ea69" name="Armament" hidden="false" collective="false" import="true" defaultSelectionEntryId="0889-b76f-27b3-05e6">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8418-e354-ee47-539d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3293-c7d1-f59f-faca" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="0889-b76f-27b3-05e6" name="Heavy howitzer" hidden="false" collective="false" import="true" targetId="7c13-225b-8afd-e986" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Casement-mounted forward facing heavy howitzer"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="d384-33d0-8f66-23d1" name="Heavy machine gun (HMG)" hidden="false" collective="false" import="true" targetId="97d3-af62-cb17-9cb8" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Pintle-mounted HMG"/>
+              </modifiers>
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="-85.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry id="7a1a-3e25-636f-79fa" name="M40 Gun Motor Carriage" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="3f52-86f6-f4ab-234d" name="M40 Gun Motor Carriage" publicationId="c58a-61c4-c8c9-ff17" page="44" hidden="false" typeId="2d20-2c46-97f0-d9bd" typeName="Vehicle">
+          <characteristics>
+            <characteristic name="Mobility" typeId="4f3d-8de7-7a3c-86f2">Tracked</characteristic>
+            <characteristic name="Armour" typeId="800c-f0f8-35cd-bf26">Light tank (8+)</characteristic>
+            <characteristic name="Special Rules" typeId="5d9c-8a45-401f-0d72">Open-topped, Vulnerable	</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="9c32-f224-1ba1-aea9" name="Vulnerable" publicationId="c58a-61c4-c8c9-ff17" page="44" hidden="false">
+          <description>Shots striking the side or rear of this vehicle gain an additional +1 Pen.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="1833-0eb1-d9ae-c8a9" name="Open-Topped" hidden="false" targetId="aabc-b1f8-3028-9ca3" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="c9d3-145d-6bd2-a2bf" name="Tank, Tank Destroyer, Anti-aircraft vehicle or Self-propelled artillery" hidden="false" targetId="a405-25ce-0c16-362a" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="534b-752e-510c-651c" name="Quality" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5f4-5633-08d1-0833" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b407-bfd0-6826-c596" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="e793-c6b9-098d-c491" name="Inexperienced" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="132.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="623c-1dbf-f823-330c" name="Regular" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="165.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7ea9-4d8d-6a1b-14ae" name="Veteran" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="8176-344d-039b-074a" value="198.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="7d48-934e-86c3-4d6d" name="Heavy howitzer" hidden="false" collective="false" import="true" targetId="7c13-225b-8afd-e986" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="name" value="Casement-mounted forward facing heavy howitzer"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e36-15d0-5488-d11e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a29-771f-35ba-b75e" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
